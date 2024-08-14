@@ -4,17 +4,6 @@
 @use 'function' as f;
 
 
-.c-section__title {
-  color: v.$color-font;
-  font-size: f.pxToRem(32);
-  text-align: center;
-  position: relative;
-  text-decoration: underline;
-  text-underline-offset: -.15em;
-  text-decoration-thickness: .3em;
-  text-decoration-color: v.$color-accent;
-  text-decoration-skip-ink: none;
-}
 
 /* ===============================================
 お問い合わせはこちらボタン
