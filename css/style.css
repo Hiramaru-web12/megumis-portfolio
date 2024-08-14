@@ -441,15 +441,14 @@ drawer
 }
 
 /* ===============================================
-お問い合わせはこちらボタン
+ボタン
 =============================================== */
-.c-footer__button a {
+.c-button__link {
   display: block;
   background: #fff;
   padding: 1em 2em;
   width: 14.5rem;
   text-align: center;
-  margin: 3.75rem auto;
   -webkit-box-shadow: 6px 6px #FFC67C;
           box-shadow: 6px 6px #FFC67C;
   border: 1px solid #3E3E3E;
@@ -461,19 +460,19 @@ drawer
   transition: transform 0.3s;
   transition: transform 0.3s, -webkit-transform 0.3s;
 }
-.c-footer__button a:after {
+.c-button__link:after {
   content: "";
   position: absolute;
   display: inline-block;
   width: 50px;
   height: 1px;
-  background: #000;
+  background: #3E3E3E;
   top: 48%;
   right: -25px;
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
 }
-.c-footer__button a:hover {
+.c-button__link:hover {
   background: #FFC67C;
   color: #fff;
   -webkit-box-shadow: unset;
@@ -482,7 +481,7 @@ drawer
           transform: translateX(6px);
   border: 1px solid #fff;
 }
-.c-footer__button a:hover:after {
+.c-button__link:hover:after {
   content: "";
   display: inline-block;
   position: absolute;
@@ -701,7 +700,10 @@ about
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  gap: 1.25rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: clamp(1.25rem, -0.07rem + 5.63vw, 5rem);
 }
 @media screen and ( max-width: 767px ) {
   .p-about__container {
@@ -731,13 +733,19 @@ about
       -ms-flex-flow: column wrap;
           flex-flow: column wrap;
   width: min(100%, 30rem);
-  gap: 3.75rem;
+  gap: 2.5rem;
   line-height: 180%;
 }
 
 .p-about__myname {
   font-size: 1.25rem;
-  text-align: center;
+}
+.p-about__myname span {
+  margin-left: 0.75rem;
+}
+
+.p-about__desc {
+  letter-spacing: 1px;
 }
 
 /* ===============================================

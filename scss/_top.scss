@@ -1,26 +1,19 @@
-@use 'mixin';
-@use 'variable';
+@use 'mixin' as m;
+@use 'variable' as v;
 @use 'reset';
-@use 'function';
-
-@use 'layout';
-@use 'common';
-
-@use 'header';
-@use 'footer';
-
+@use 'function' as f;
 
 /* ===============================================
 fv
 =============================================== */
 .p-fv {
-  margin-top: function.pxToRem(86);
+  margin-top: f.pxToRem(86);
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
 
-  @include mixin.mq('sp'){
-    margin-top: function.pxToRem(60);
+  @include m.mq('sp'){
+    margin-top: f.pxToRem(60);
   } 
   
   img {
@@ -54,7 +47,7 @@ fv
   text-align: center;
   justify-content: center;
   align-items: center;
-  gap: function.pxToRem(10);
+  gap: f.pxToRem(10);
   
   > h1{
     font-size: clamp(2rem, 1.296rem + 3vw, 4rem);
@@ -72,12 +65,12 @@ fv
   display: grid;
   grid-row: 8 ;
   grid-column: 6 / 8;
-  top: function.pxToRem(60);
+  top: f.pxToRem(60);
   position: relative;
 
   span {
     color: #fff;
-    font-size: function.pxToRem(16);
+    font-size: f.pxToRem(16);
     font-weight: 700;
   }
 
@@ -91,7 +84,7 @@ fv
     animation: pathmove 1.4s ease-in-out infinite;
     opacity: 0;
 
-    @include mixin.mq("sp") {
+    @include m.mq("sp") {
       height: 52px;
     }
 
@@ -119,20 +112,21 @@ about
 =============================================== */
 
 .p-about{
-  background: variable.$color-primary;
-  padding: function.pxToRem(90) 0;
+  background: v.$color-primary;
+  padding: f.pxToRem(90) 0;
 }
 
 .p-about__inner{
-  padding: 0 function.pxToRem(30);
+  padding: 0 f.pxToRem(30);
 }
 
 .p-about__container {
   display: flex;
   justify-content: space-between;
-  gap: min(function.pxToRem(20));
+  align-items: center;
+  gap: clamp(1.25rem, -0.07rem + 5.63vw, 5rem);
 
-  @include mixin.mq('sp') {
+  @include m.mq('sp') {
     flex-flow: column wrap;
     justify-content: center;
     place-items: center;
@@ -141,25 +135,29 @@ about
 }
 
 .p-about__img {
-   font-size: function.pxToRem(24);
+   font-size: f.pxToRem(24);
    flex-shrink: 0;
 }
 
 .p-about__text {
   display: flex;
   flex-flow: column wrap;
-  width: min(100%,(function.pxToRem(480)));
-  gap: function.pxToRem(60);
+  width: min(100%,(f.pxToRem(480)));
+  gap: f.pxToRem(40);
   line-height: 180%;
-  
 }
-
 
 .p-about__myname{
-  font-size: function.pxToRem(20);
-  text-align: center;
+  font-size: f.pxToRem(20);
+
+  span {
+    margin-left: f.pxToRem(12);
+  }
 }
 
+.p-about__desc {
+ letter-spacing: 1px;
+}
 /* ===============================================
 skill
 =============================================== */
@@ -172,36 +170,36 @@ skill
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto;
-    gap: function.pxToRem(20);
+    gap: f.pxToRem(20);
     place-items: center;
 
-    @include mixin.mq('tab'){
+    @include m.mq('tab'){
       grid-template-columns: 1fr 1fr;
      } 
   
-    @include mixin.mq('sp') {
+    @include m.mq('sp') {
       grid-template-columns: 1fr;
     }
   }
 }
 
 .p-skill__card {
-width: min(100%,function.pxToRem(410));
-height: function.pxToRem(300);
+width: min(100%,f.pxToRem(410));
+height: f.pxToRem(300);
 background: #fff;
 display: flex;
 flex-flow: column wrap;
-gap: function.pxToRem(20);
-padding: function.pxToRem(28) function.pxToRem(20) function.pxToRem(20);
+gap: f.pxToRem(20);
+padding: f.pxToRem(28) f.pxToRem(20) f.pxToRem(20);
 box-shadow: 0px 5px 15px 0px rgb(0 0 0 / .1);
   > img {
     display: block;
     margin: 0 auto;
-    height: function.pxToRem(54);
+    height: f.pxToRem(54);
   }
 
-  @include mixin.mq('sp'){
-    height: function.pxToRem(280);
+  @include m.mq('sp'){
+    height: f.pxToRem(280);
   } 
 }
 
@@ -212,7 +210,7 @@ box-shadow: 0px 5px 15px 0px rgb(0 0 0 / .1);
 }
 
 .p-skill__desc {
-  margin-top: function.pxToRem(10);
+  margin-top: f.pxToRem(10);
   
 }
 
@@ -229,32 +227,32 @@ skill
    display: grid;
    grid-template-columns: 1fr 1fr 1fr;
    grid-template-rows: auto;
-   gap: function.pxToRem(20);
+   gap: f.pxToRem(20);
    place-items: center;
 
-   @include mixin.mq('tab'){
+   @include m.mq('tab'){
     grid-template-columns: 1fr 1fr;
    } 
   
-   @include mixin.mq('sp'){
+   @include m.mq('sp'){
     grid-template-columns: 1fr;
    } 
   }
 }
 
 .p-service__card {
-  width: min(100%,function.pxToRem(410));
-  height: function.pxToRem(342);
+  width: min(100%,f.pxToRem(410));
+  height: f.pxToRem(342);
   background: #fff;
   display: flex;
   flex-flow: column wrap;
-  gap: function.pxToRem(20);
-  padding: min(function.pxToRem(20));
+  gap: f.pxToRem(20);
+  padding: min(f.pxToRem(20));
   box-shadow: 0px 5px 15px 0px rgb(0 0 0 /.1);
     > img {
       display: block;
       margin: 0 auto;
-      height: function.pxToRem(136);
+      height: f.pxToRem(136);
     }
 
   }
@@ -266,22 +264,22 @@ skill
   }
   
   .p-service__desc {
-    padding: 0 function.pxToRem(20);
+    padding: 0 f.pxToRem(20);
   }
 
   /* ===============================================
   works
   =============================================== */
   .p-works {
-    padding-bottom: function.pxToRem(160);
+    padding-bottom: f.pxToRem(160);
     background: #fff;
   }
   .p-works__container{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: function.pxToRem(20);
+    gap: f.pxToRem(20);
     
-    @include mixin.mq('sp') {
+    @include m.mq('sp') {
       grid-template-columns: 1fr;
     }
   }
