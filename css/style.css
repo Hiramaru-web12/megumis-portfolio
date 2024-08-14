@@ -160,6 +160,7 @@ header
 =============================================== */
 .l-header {
   padding: 0.625rem 1rem;
+  background: #F7F7F9;
   position: fixed;
   top: 0;
   right: 0;
@@ -938,6 +939,11 @@ works
 .p-works__link:hover,
 .p-item__mask:hover {
   opacity: 1;
+}
+
+.p-works__button {
+  display: block;
+  margin: 5rem auto 0;
 }
 
 .p-works-detal__title {
