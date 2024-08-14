@@ -3,6 +3,76 @@
 @use 'reset';
 @use 'function';
 
+/* ===============================================
+header
+=============================================== */
+.l-header {
+  background: variable.$color-primary;
+  padding: function.pxToRem(10) function.pxToRem(16);
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: function.pxToRem(84);
+  z-index:2;
+ 
+  @include mixin.mq('sp'){
+   height: function.pxToRem(60);
+  } 
+ }
+ 
+ .l-header__inner {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin: 0 auto;
+   width: min(100%, function.pxToRem(1120));
+ }
+
+ /* ===============================================
+ drawer
+ =============================================== */
+ .l-drawer {
+  display: none;
+
+  @include m.mq('sp') {
+    display: block;
+    background: variable.$color-primary;
+    width: 80%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: -120%;
+    padding-bottom: function.pxToRem(24);
+    z-index: 9;
+    transition: all 0.5s linear 0s;
+    
+    &.is-active {
+      right: 0;
+   }
+  }
+}
+
+.l-drawer__inner {
+  padding: function.pxToRem(60) function.pxToRem(20);  
+}
+
+.l-drawer__bg {
+  display: none;
+
+  &.is-active{
+    background: rgb(0 0 0 /.5);
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: fixed;
+    top:0;
+    left: 0;
+    z-index: 6;
+  }
+}
+
 .l-section {
   padding-top: function.pxToRem(90);
   padding-bottom: function.pxToRem(60);

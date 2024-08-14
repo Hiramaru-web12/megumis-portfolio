@@ -1,87 +1,11 @@
-@use 'mixin';
-@use 'variable';
+@use 'mixin' as m;
+@use 'variable' as v;
 @use 'reset';
-@use 'function';
+@use 'function' as f;
 
-
-/* ===============================================
-ロゴ
-=============================================== */
-.c-header__logo {
-  display: block;
-  margin: auto 0;
-  
-  @include mixin.mq('sp') {
-    width: function.pxToRem(50);
-  }
-}
-
-/* ===============================================
-drawer
-=============================================== */
-.c-drawer__icon {
- @include mixin.mq('pc') {
-  display: none;
- }
-
-    position: absolute;
-    content: "";
-    display: inline-block;
-    width: function.pxToRem(50);
-    height: function.pxToRem(50);
-    border-radius: 50%;
-    background: variable.$color-accent;
-    top: function.pxToRem(6);
-    right: function.pxToRem(16);
-    z-index: 10;
-    transition: all 0.3s ease 0s;
-
-    @include mixin.mq('tab'){
-      top: function.pxToRem(16);
-    } 
-
-    &.is-active{
-      span {
-        &:nth-of-type(1){
-          transform: translateY(10px)rotate(-45deg);
-          background: #fff;
-          }
-          &:nth-of-type(2) {
-            opacity: 0;
-          }
-          &:nth-of-type(3) {
-            transform: translateY(-10px) rotate(45deg);
-            background: #fff;
-          }
-        }
-    }
-    
-  }
-  .c-drawer__bars{
-
-  > span {
-    display: inline-block;
-    transition: all .4s;/*アニメーションの設定*/
-    position: absolute;
-    left: function.pxToRem(11);
-    height: 2px;
-    background: #fff;
-    width: function.pxToRem(28);
-  
-    &:nth-of-type(1){
-      top: function.pxToRem(13);
-    }
-    &:nth-of-type(2){
-      top: function.pxToRem(23);
-    }
-    &:nth-of-type(3){
-      top: function.pxToRem(33);
-    }
-  }
-}
 
 .c-section__title {
-  color: variable.$color-title;
+  color: v.$color-font;
   font-size: function.pxToRem(32);
   text-align: center;
   position: relative;

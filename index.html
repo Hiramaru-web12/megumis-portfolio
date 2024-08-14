@@ -28,14 +28,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;500&display=swap"
       rel="stylesheet"
     />
     <!-- animate -->
-    <link rel="stylesheet" href="./css/animate.css" />
+    <link rel="stylesheet" href="../css/animate.css" />
     <!-- original -->
-    <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="./js/script.js" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../js/script.js" />
   </head>
   <body>
     <!-- header -->
@@ -43,7 +43,7 @@
       <div class="l-header__inner">
         <div class="c-header__logo">
           <a href="#">
-            <img src="./img/logo.png" alt="ロゴ" width="70" height="70" />
+            <img src="../img/logo.png" alt="ロゴ" width="70" height="70" />
           </a>
         </div>
         <button class="c-drawer__icon">
@@ -55,16 +55,11 @@
         </button>
         <div class="l-drawer">
           <div class="l-drawer__inner">
-            <nav class="l-drawer__nav">
-              <ul>
-                <li class="l-drawer__link"><a href="#about">私について</a></li>
-                <li class="l-drawer__link"><a href="#skill">スキル</a></li>
-                <li class="l-drawer__link">
-                  <a href="#service">サービス内容</a>
-                </li>
-                <li class="l-drawer__link"><a href="#works">制作実績</a></li>
-                <!-- <li class="l-drawer__link"><a href="/contact">お問い合わせ</a></li> -->
-                <li class="l-drawer__link">
+              <ul class="p-drawer__nav">
+                <li><a href="">ホーム</a></li>
+                <li><a href="/about">私について</a></li>
+                <li><a href="/works">制作実績</a></li>
+                <li>
                   <a href="https://x.com/hrmr_crt96">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -81,24 +76,19 @@
               </ul>
             </nav>
           </div>
-          <div class="l-drawer__copyright">
+          <div class="p-drawer__copyright">
             <p class="c-copyright">
-              <small lang="en">©2024 Hiramaru Portfolio.</small>
+              <small lang="en">Mebumi`s Portfolio.</small>
             </p>
           </div>
         </div>
         <div class="l-drawer__bg"></div>
 
-        <nav class="l-header__nav">
-          <ul>
-            <li class="l-header__nav-link"><a href="#about">私について</a></li>
-            <li class="l-header__nav-link"><a href="#skill">スキル</a></li>
-            <li class="l-header__nav-link">
-              <a href="#service">サービス内容</a>
-            </li>
-            <li class="l-header__nav-link"><a href="#works">制作実績</a></li>
-            <!-- <li class="l-header__nav-link"><a href="/contact">お問い合わせ</a></li> -->
-            <li class="l-header__nav-link">
+          <ul class="p-header__nav">
+            <li><a href="">ホーム</a></li>
+            <li><a href="/about">私について</a></li>
+            <li><a href="/works">制作実績</a></li>
+            <li>
               <a href="https://x.com/hrmr_crt96"
                 ><svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -113,7 +103,6 @@
               </a>
             </li>
           </ul>
-        </nav>
       </div>
     </header>
 
