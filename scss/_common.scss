@@ -6,13 +6,13 @@
 
 .c-section__title {
   color: v.$color-font;
-  font-size: function.pxToRem(32);
+  font-size: f.pxToRem(32);
   text-align: center;
   position: relative;
   text-decoration: underline;
   text-underline-offset: -.15em;
   text-decoration-thickness: .3em;
-  text-decoration-color: variable.$color-accent;
+  text-decoration-color: v.$color-accent;
   text-decoration-skip-ink: none;
 }
 
@@ -25,12 +25,12 @@
     display: block;
     background: #fff;
     padding: 1em 2em;
-    width: function.pxToRem(232);
+    width: f.pxToRem(232);
     text-align: center;
-    margin: function.pxToRem(60) auto;
-    box-shadow: 6px 6px variable.$color-accent;
-    border: 1px solid variable.$color-title;
-    color: variable.$color-title;
+    margin: f.pxToRem(60) auto;
+    box-shadow: 6px 6px v.$color-accent;
+    border: 1px solid v.$color-font;
+    color: v.$color-font;
     position: relative;
     cursor: pointer;
     transition: transform .3s ;
@@ -48,7 +48,7 @@
     }
     
     &:hover {
-      background: variable.$color-accent;
+      background: v.$color-accent;
       color: #fff;
       box-shadow: unset;
       transform: translateX(6px);
@@ -81,8 +81,8 @@ html {
   position: fixed;
   right: 30px;
   bottom: 30px;
-  background: variable.$color-accent;
-  border: solid 2px variable.$color-accent;
+  background: v.$color-accent;
+  border: solid 2px v.$color-accent;
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -92,7 +92,7 @@ html {
   visibility: hidden;
   transition: all 0.5s ease 0s;
 
-  @include mixin.mq('sp'){
+  @include m.mq('sp'){
     height: 45px;
     width: 45px;
   } 

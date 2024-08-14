@@ -1,13 +1,9 @@
-@charset "utf-8";
-
-@use 'mixin';
-@use 'variable';
+@use 'mixin' as m;
+@use 'variable' as v;
 @use 'reset';
-@use 'function';
+@use 'function' as f;
 
 @use 'layout';
-@use 'common';
-
 @use 'header';
 @use 'footer';
 
@@ -15,7 +11,7 @@
 
 .p-works-detal__title {
   font-weight: 700;
-  font-size: function.pxToRem(20);
+  font-size: f.pxToRem(20);
 }
 
 .p-works-detal__img {
@@ -27,33 +23,33 @@
   display: flex;
   border-bottom : 1px solid #c4c4c4;
 
-  @include mixin.mq('sp') {
+  @include m.mq('sp') {
     flex-flow: column wrap;
   }
 }
 
 dl {
-  margin-top: function.pxToRem(52);
+  margin-top: f.pxToRem(52);
   width: 100%;
   
-  @include mixin.mq('sp') {
-    margin-top: function.pxToRem(60);
+  @include m.mq('sp') {
+    margin-top: f.pxToRem(60);
   }
   
   dt {
     font-weight: 700;
     max-width: 600px;
-    width: function.pxToRem(120);
+    width: f.pxToRem(120);
     flex-shrink: 0;
   }
   
   dt,dd {
-    padding: function.pxToRem(30) 0;
+    padding: f.pxToRem(30) 0;
     align-items: center;
     width: 100&;
 
-    @include mixin.mq('sp') {
-      padding: function.pxToRem(16) 0;  
+    @include m.mq('sp') {
+      padding: f.pxToRem(16) 0;  
    }
   }
 

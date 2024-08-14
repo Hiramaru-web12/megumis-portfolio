@@ -1,20 +1,18 @@
-@use 'mixin';
-@use 'variable';
+@use 'mixin' as m;
+@use 'variable' as v;
 @use 'reset';
-@use 'function';
-
-@use 'common';
+@use 'function' as f;
 
 .l-footer {
-  background: variable.$color-primary;
-  padding-top: function.pxToRem(90);
-  padding-bottom: function.pxToRem(40);
+  background: v.$color-primary;
+  padding-top: f.pxToRem(90);
+  padding-bottom: f.pxToRem(40);
 
    
 }
 
 .l-footer__container {
-  padding-top: function.pxToRem(40);
+  padding-top: f.pxToRem(40);
   text-align: center;
 }
 

@@ -10,7 +10,7 @@
   display: block;
   margin: auto 0;
   
-  @include mixin.mq('sp') {
+  @include m.mq('sp') {
     width: f.pxToRem(50);
   }
 }

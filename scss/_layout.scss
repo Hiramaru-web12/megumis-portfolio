@@ -1,24 +1,24 @@
-@use 'mixin';
-@use 'variable';
+@use 'mixin' as m;
+@use 'variable' as v;
 @use 'reset';
-@use 'function';
+@use 'function' as f;
 
 /* ===============================================
 header
 =============================================== */
 .l-header {
-  background: variable.$color-primary;
-  padding: function.pxToRem(10) function.pxToRem(16);
+  background: v.$color-primary;
+  padding: f.pxToRem(10) f.pxToRem(16);
   position: fixed;
   top: 0;
   right: 0;
   left: 0;
   width: 100%;
-  height: function.pxToRem(84);
+  height: f.pxToRem(84);
   z-index:2;
  
-  @include mixin.mq('sp'){
-   height: function.pxToRem(60);
+  @include m.mq('sp'){
+   height: f.pxToRem(60);
   } 
  }
  
@@ -27,7 +27,7 @@ header
    justify-content: space-between;
    align-items: center;
    margin: 0 auto;
-   width: min(100%, function.pxToRem(1120));
+   width: min(100%, f.pxToRem(1120));
  }
 
  /* ===============================================
@@ -38,13 +38,13 @@ header
 
   @include m.mq('sp') {
     display: block;
-    background: variable.$color-primary;
+    background: v.$color-primary;
     width: 80%;
     height: 100vh;
     position: fixed;
     top: 0;
     right: -120%;
-    padding-bottom: function.pxToRem(24);
+    padding-bottom: f.pxToRem(24);
     z-index: 9;
     transition: all 0.5s linear 0s;
     
@@ -55,7 +55,7 @@ header
 }
 
 .l-drawer__inner {
-  padding: function.pxToRem(60) function.pxToRem(20);  
+  padding: f.pxToRem(60) f.pxToRem(20);  
 }
 
 .l-drawer__bg {
@@ -74,27 +74,27 @@ header
 }
 
 .l-section {
-  padding-top: function.pxToRem(90);
-  padding-bottom: function.pxToRem(60);
+  padding-top: f.pxToRem(90);
+  padding-bottom: f.pxToRem(60);
 }
 
 .l-inner {
-  @include mixin.mq('pc') {
-    max-width: function.pxToRem(960);
+  @include m.mq('pc') {
+    max-width: f.pxToRem(960);
     margin: 0 auto;
   }
 
-  @include mixin.mq('tab') {
-    padding: 0 function.pxToRem(60);
+  @include m.mq('tab') {
+    padding: 0 f.pxToRem(60);
   }
 
-  @include mixin.mq('sp') {
-    padding: 0 function.pxToRem(16);
+  @include m.mq('sp') {
+    padding: 0 f.pxToRem(16);
   }
 }
 
 .l-section__container {
-  padding-top: function.pxToRem(70);
+  padding-top: f.pxToRem(70);
 }
 
 .l-footer__copyright {
@@ -103,6 +103,6 @@ header
 
 .l-works-detal {
   background: #fff;
-  margin-top: function.pxToRem(84);
-  padding: function.pxToRem(100) 0
+  margin-top: f.pxToRem(84);
+  padding: f.pxToRem(100) 0
 }
