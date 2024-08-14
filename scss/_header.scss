@@ -36,14 +36,27 @@ drawer
   padding-top: f.pxToRem(20);
   display: flex;
   flex-flow: column;
-
+  text-align: center;
+  
   li {
     gap: f.pxToRem(10);
-    padding: f.pxToRem(20) 0;
+    padding: f.pxToRem(10) 0;
     font-weight: 500;
+
+    &:not(:last-child){
+      border-bottom: 1px solid v.$color-font;
+    }
     
     a {
-      padding: .2em 0;
+      padding: 1em 0;
+      width: 100%;
+      display: block;
+
+      svg {
+       display: block;
+       margin: f.pxToRem(20) auto 0;
+      }
+      
     }
   }
 }

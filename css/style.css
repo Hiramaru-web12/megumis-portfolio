@@ -310,14 +310,24 @@ drawer
   -webkit-box-direction: normal;
       -ms-flex-flow: column;
           flex-flow: column;
+  text-align: center;
 }
 .p-drawer__nav li {
   gap: 0.625rem;
-  padding: 1.25rem 0;
+  padding: 0.625rem 0;
   font-weight: 500;
 }
+.p-drawer__nav li:not(:last-child) {
+  border-bottom: 1px solid #3E3E3E;
+}
 .p-drawer__nav li a {
-  padding: 0.2em 0;
+  padding: 1em 0;
+  width: 100%;
+  display: block;
+}
+.p-drawer__nav li a svg {
+  display: block;
+  margin: 1.25rem auto 0;
 }
 
 .p-drawer__copyright {
