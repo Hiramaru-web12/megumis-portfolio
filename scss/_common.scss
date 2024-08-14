@@ -1,0 +1,201 @@
+@use 'mixin';
+@use 'variable';
+@use 'reset';
+@use 'function';
+
+
+/* ===============================================
+ロゴ
+=============================================== */
+.c-header__logo {
+  display: block;
+  margin: auto 0;
+  
+  @include mixin.mq('sp') {
+    width: function.pxToRem(50);
+  }
+}
+
+/* ===============================================
+drawer
+=============================================== */
+.c-drawer__icon {
+ @include mixin.mq('pc') {
+  display: none;
+ }
+
+    position: absolute;
+    content: "";
+    display: inline-block;
+    width: function.pxToRem(50);
+    height: function.pxToRem(50);
+    border-radius: 50%;
+    background: variable.$color-accent;
+    top: function.pxToRem(6);
+    right: function.pxToRem(16);
+    z-index: 10;
+    transition: all 0.3s ease 0s;
+
+    @include mixin.mq('tab'){
+      top: function.pxToRem(16);
+    } 
+
+    &.is-active{
+      span {
+        &:nth-of-type(1){
+          transform: translateY(10px)rotate(-45deg);
+          background: #fff;
+          }
+          &:nth-of-type(2) {
+            opacity: 0;
+          }
+          &:nth-of-type(3) {
+            transform: translateY(-10px) rotate(45deg);
+            background: #fff;
+          }
+        }
+    }
+    
+  }
+  .c-drawer__bars{
+
+  > span {
+    display: inline-block;
+    transition: all .4s;/*アニメーションの設定*/
+    position: absolute;
+    left: function.pxToRem(11);
+    height: 2px;
+    background: #fff;
+    width: function.pxToRem(28);
+  
+    &:nth-of-type(1){
+      top: function.pxToRem(13);
+    }
+    &:nth-of-type(2){
+      top: function.pxToRem(23);
+    }
+    &:nth-of-type(3){
+      top: function.pxToRem(33);
+    }
+  }
+}
+
+.c-section__title {
+  color: variable.$color-title;
+  font-size: function.pxToRem(32);
+  text-align: center;
+  position: relative;
+  text-decoration: underline;
+  text-underline-offset: -.15em;
+  text-decoration-thickness: .3em;
+  text-decoration-color: variable.$color-accent;
+  text-decoration-skip-ink: none;
+}
+
+/* ===============================================
+お問い合わせはこちらボタン
+=============================================== */
+
+.c-footer__button {
+  a {
+    display: block;
+    background: #fff;
+    padding: 1em 2em;
+    width: function.pxToRem(232);
+    text-align: center;
+    margin: function.pxToRem(60) auto;
+    box-shadow: 6px 6px variable.$color-accent;
+    border: 1px solid variable.$color-title;
+    color: variable.$color-title;
+    position: relative;
+    cursor: pointer;
+    transition: transform .3s ;
+    
+    &:after {
+      content: "";
+      position: absolute;
+      display: inline-block;
+      width: 50px;
+      height: 1px;
+      background: #000;
+      top: 48%;
+      right: -25px;
+      transition: all .3s linear;
+    }
+    
+    &:hover {
+      background: variable.$color-accent;
+      color: #fff;
+      box-shadow: unset;
+      transform: translateX(6px);
+      border: 1px solid #fff;
+      
+      &:after {
+        content: "";
+        display: inline-block;
+        position: absolute;
+        width: 10px;
+        height: 1px;
+        background: #fff;
+        top: 48%;
+        right: 10px;
+      }
+  }
+}
+}
+
+/* ===============================================
+トップへ戻る
+=============================================== */
+html {
+  scroll-behavior: smooth;
+}
+.c-pageTop {
+ 
+  height: 60px;
+  width: 60px;
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  background: variable.$color-accent;
+  border: solid 2px variable.$color-accent;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s ease 0s;
+
+  @include mixin.mq('sp'){
+    height: 45px;
+    width: 45px;
+  } 
+
+  &.is-show {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  &:hover{
+    transform:scale(1.2,1.2);
+  }
+}
+
+.c-pageTop__arrow {
+  height: 10px;
+  width: 10px;
+  border-top: 3px solid #fff;
+  border-right: 3px solid #fff;
+  transform: translateY(20%) rotate(-45deg);
+}
+
+
+/* ===============================================
+copyright
+=============================================== */
+.c-copyright {
+  text-align: center;
+  padding: 1em;
+}

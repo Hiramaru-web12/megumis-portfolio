@@ -1,0 +1,38 @@
+@use 'mixin';
+@use 'variable';
+@use 'reset';
+@use 'function';
+
+.l-section {
+  padding-top: function.pxToRem(90);
+  padding-bottom: function.pxToRem(60);
+}
+
+.l-inner {
+  @include mixin.mq('pc') {
+    max-width: function.pxToRem(960);
+    margin: 0 auto;
+  }
+
+  @include mixin.mq('tab') {
+    padding: 0 function.pxToRem(60);
+  }
+
+  @include mixin.mq('sp') {
+    padding: 0 function.pxToRem(16);
+  }
+}
+
+.l-section__container {
+  padding-top: function.pxToRem(70);
+}
+
+.l-footer__copyright {
+  background: #fff;
+}
+
+.l-works-detal {
+  background: #fff;
+  margin-top: function.pxToRem(84);
+  padding: function.pxToRem(100) 0
+}

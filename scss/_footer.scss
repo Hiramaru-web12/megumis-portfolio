@@ -1,0 +1,20 @@
+@use 'mixin';
+@use 'variable';
+@use 'reset';
+@use 'function';
+
+@use 'common';
+
+.l-footer {
+  background: variable.$color-primary;
+  padding-top: function.pxToRem(90);
+  padding-bottom: function.pxToRem(40);
+
+   
+}
+
+.l-footer__container {
+  padding-top: function.pxToRem(40);
+  text-align: center;
+}
+

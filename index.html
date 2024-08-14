@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head prefix="og: https://ogp.me/ns#">
+    <!-- ここからmetaタグの記述 -->
+    <meta property="og:url" content="https://hiramaru.site/my-portfolio/" />
+    <meta property="og:type" content="website or article" />
+    <meta property="og:title" content="ページのタイトル" />
+    <meta property="og:description" content="ページの説明文" />
+    <meta property="og:site_name" content="my-portfolio" />
+    <meta
+      property="og:image"
+      content="https://hiramaru.site/my-portfolio/img/ogp.png"
+    />
+    <!-- ここからTwitterカードの記述 -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@hrmr_crt96" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="icon" href="./img/favicon.svg" sizes="any" type="img/svg+xml" />
+    <link rel="apple-touch-icon" href="./img/apple-touch-icon.png" />
+    <!-- 180x180px -->
+    <meta name="viewport" content="width=device-width, initiap-scale=1.0" />
+    <meta name="robots" content="noindex , nofollow" />
+    <title>My Portfolio</title>
+    <meta name="description" content="" />
+    <link rel="shortcut icon" href="./img/favicon.ico" />
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- animate -->
+    <link rel="stylesheet" href="./css/animate.css" />
+    <!-- original -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./js/script.js" />
+  </head>
+  <body>
+    <!-- header -->
+    <header id="js-header" class="l-header">
+      <div class="l-header__inner">
+        <div class="c-header__logo">
+          <a href="#">
+            <img src="./img/logo.png" alt="ロゴ" width="70" height="70" />
+          </a>
+        </div>
+        <button class="c-drawer__icon">
+          <div class="c-drawer__bars">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </button>
+        <div class="l-drawer">
+          <div class="l-drawer__inner">
+            <nav class="l-drawer__nav">
+              <ul>
+                <li class="l-drawer__link"><a href="#about">私について</a></li>
+                <li class="l-drawer__link"><a href="#skill">スキル</a></li>
+                <li class="l-drawer__link">
+                  <a href="#service">サービス内容</a>
+                </li>
+                <li class="l-drawer__link"><a href="#works">制作実績</a></li>
+                <!-- <li class="l-drawer__link"><a href="/contact">お問い合わせ</a></li> -->
+                <li class="l-drawer__link">
+                  <a href="https://x.com/hrmr_crt96">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 50 50"
+                      width="50px"
+                      height="50px"
+                    >
+                      <path
+                        d="M 11 4 C 7.134 4 4 7.134 4 11 L 4 39 C 4 42.866 7.134 46 11 46 L 39 46 C 42.866 46 46 42.866 46 39 L 46 11 C 46 7.134 42.866 4 39 4 L 11 4 z M 13.085938 13 L 21.023438 13 L 26.660156 21.009766 L 33.5 13 L 36 13 L 27.789062 22.613281 L 37.914062 37 L 29.978516 37 L 23.4375 27.707031 L 15.5 37 L 13 37 L 22.308594 26.103516 L 13.085938 13 z M 16.914062 15 L 31.021484 35 L 34.085938 35 L 19.978516 15 L 16.914062 15 z"
+                      />
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="l-drawer__copyright">
+            <p class="c-copyright">
+              <small lang="en">©2024 Hiramaru Portfolio.</small>
+            </p>
+          </div>
+        </div>
+        <div class="l-drawer__bg"></div>
+
+        <nav class="l-header__nav">
+          <ul>
+            <li class="l-header__nav-link"><a href="#about">私について</a></li>
+            <li class="l-header__nav-link"><a href="#skill">スキル</a></li>
+            <li class="l-header__nav-link">
+              <a href="#service">サービス内容</a>
+            </li>
+            <li class="l-header__nav-link"><a href="#works">制作実績</a></li>
+            <!-- <li class="l-header__nav-link"><a href="/contact">お問い合わせ</a></li> -->
+            <li class="l-header__nav-link">
+              <a href="https://x.com/hrmr_crt96"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 50 50"
+                  width="50px"
+                  height="50px"
+                >
+                  <path
+                    d="M 11 4 C 7.134 4 4 7.134 4 11 L 4 39 C 4 42.866 7.134 46 11 46 L 39 46 C 42.866 46 46 42.866 46 39 L 46 11 C 46 7.134 42.866 4 39 4 L 11 4 z M 13.085938 13 L 21.023438 13 L 26.660156 21.009766 L 33.5 13 L 36 13 L 27.789062 22.613281 L 37.914062 37 L 29.978516 37 L 23.4375 27.707031 L 15.5 37 L 13 37 L 22.308594 26.103516 L 13.085938 13 z M 16.914062 15 L 31.021484 35 L 34.085938 35 L 19.978516 15 L 16.914062 15 z"
+                  />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- main -->
+    <main class="l-main">
+      <div class="p-fv">
+        <div class="p-fv__content wow fadeIn">
+          <h1 class="p-fv__copy">Webの力で想いを繋ぐ</h1>
+          <p>Hiramaru Portforio.</p>
+        </div>
+        <div class="p-fv__scroll">
+          <span>scrool</span>
+        </div>
+        <picture class="p-fv__img">
+          <source media="(min-width: 768px)" srcset="./img/fv.png" />
+          <img src="./img/fv-sp.png" alt="ファーストビュー" />
+        </picture>
+      </div>
+
+      <section id="about" class="p-about">
+        <div class="p-about__inner l-inner">
+          <h2 class="c-section__title wow fadeInUp">私について</h2>
+          <div class="p-about__container l-section__container">
+            <div class="p-about__img wow fadeInLeft delay-2s">
+              <img
+                src="img/my-icon.png"
+                alt="プロフィール画像"
+                height="380"
+                width="380"
+              />
+            </div>
+            <div class="p-about__text wow fadeInRight delay-2s">
+              <p class="p-about__myname">-Hiramaru-</p>
+              <p class="p-about__desc">
+                ご覧いただきありがとうございます。<br />
+                ホームページやランディングページのコーディングをしています。<br /><br />前職は5年ほど総合病院で勤務をしており、臨床検査技師として患者さんや現場スタッフとのコミュニケーションを大切にしながら仕事をしていました。<br /><br />この経験を活かし、制作の際はお客様の抱える課題やご要望を丁寧にヒアリングし、事業をサポートできるよう提案いたします。
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="skill" class="l-section p-skill">
+        <div class="l-skill__inner l-inner">
+          <h2 class="c-section__title wow fadeInUp">スキル</h2>
+          <div class="p-skill__container l-section__container">
+            <ul>
+              <li class="p-skill__card wow fadeInUp">
+                <img src="./img/skill01.png" alt="html/css" width="146" />
+                <p class="p-skill__name">HTML/ CSS(Sass）</p>
+                <p class="p-skill__desc">
+                  コードの保守性、SEO、レスポンシブを意識したマークアップを行います。FLOCSSやSassを取り入れています。
+                </p>
+              </li>
+              <li class="p-skill__card wow fadeInUp" data-wow-delay=".5s">
+                <img src="./img/skill02.png" alt="js/jquery" width="146" />
+                <p class="p-skill__name">JavaScript/JQuery</p>
+                <p class="p-skill__desc">
+                  主にJQueryライブラリを編集して、ローディングやドロワーメニューなどのアニメーションが実装可能です。
+                </p>
+              </li>
+              <li class="p-skill__card wow fadeInUp" data-wow-delay="1s">
+                <img src="./img/skill03.png" alt="figma/xd" width="146" />
+                <p class="p-skill__name">Figma/XD</p>
+                <p class="p-skill__desc">
+                  画像の書き出しを行い、デザインカンプからのコーディングが可能です。デザインを忠実に再現いたします。
+                </p>
+              </li>
+              <!-- <li class="p-skill__card">
+            <img src="./img/skill04.png" alt="wordpress" width="48">
+            <p class="p-skill__name">WordPress</p>
+            <p class="p-skill__desc">既存のサイトをWordPress化し、カスタム投稿やカスタムフィールドの追加を実装させることができます。</p>
+          </li> -->
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="service" class="l-section p-service">
+        <div class="l-service__inner l-inner">
+          <h2 class="c-section__title wow fadeInUp">サービス内容</h2>
+          <div class="p-service__container l-section__container">
+            <ul>
+              <li class="p-service__card wow fadeInUp">
+                <img
+                  src="./img/service01.png"
+                  alt="html/css"
+                  width="170"
+                  height="136"
+                />
+                <p class="p-service__name">コーディング</p>
+                <p class="p-service__desc">
+                  HTML/CSSを用いてサイトデザインを忠実に再現します。画面幅に合わせて表示させることも可能です。
+                </p>
+              </li>
+              <li class="p-service__card wow fadeInUp" data-wow-delay=".5s">
+                <img
+                  src="./img/service03.png"
+                  alt="figma/xd"
+                  width="170"
+                  height="136"
+                />
+                <p class="p-service__name">ホームページ修正</p>
+                <p class="p-service__desc">
+                  表示崩れやデザイン、文言の変更などホームページ制作に関わるちょっとしたお困りごとでも対応いたします。
+                </p>
+              </li>
+              <li class="p-service__card wow fadeInUp" data-wow-delay="1s">
+                <img
+                  src="./img/service02.png"
+                  alt="js/jquery"
+                  width="170"
+                  height="136"
+                />
+                <p class="p-service__name">ホームページ作成</p>
+                <p class="p-service__desc">
+                  見た目だけでなく、見たい場所へアクセスしやすいホームページを作成します。
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="works" class="l-section p-works">
+        <div class="l-works__inner l-inner">
+          <h2 class="c-section__title wow fadeInUp">制作実績</h2>
+          <div class="p-works__container l-section__container">
+            <article class="p-works__item wow fadeInUp">
+              <a class="p-works__link" href="works01/">
+                <div class="p-item__content">
+                  <img
+                    src="./img/hiramaru-nouen.png"
+                    alt="架空の農園サイト"
+                    width="314"
+                    height="180"
+                  />
+                  <div class="p-item__mask">
+                    <p class="p-item__mask-text">もっとみる</p>
+                  </div>
+                </div>
+              </a>
+            </article>
+            <article class="p-works__item wow fadeInUp">
+              <a class="p-works__link" href="works02/">
+                <div class="p-item__content">
+                  <img
+                    src="./img/aobotan-koumuten.png"
+                    alt="架空の工務店サイト"
+                    width="314"
+                    height="180"
+                  />
+                  <div class="p-item__mask">
+                    <p class="p-item__mask-text">もっとみる</p>
+                  </div>
+                </div>
+              </a>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- footer -->
+    <footer class="l-footer">
+      <div class="l-footer__inner l-inner">
+        <h2 class="c-section__title wow fadeInUp">お問い合わせ</h2>
+        <div class="l-footer__container">
+          <p class="l-footer__text">
+            ポートフォリオ掲載用のため非アクティブです
+            <!-- 各種制作のお見積もりやご依頼・その他ご相談等ありましたら <br>お気軽にお問い合わせください。 -->
+          </p>
+
+          <button class="c-footer__button">
+            <a href="#" class="c-contact__link"> お問い合わせはこちら </a>
+          </button>
+        </div>
+      </div>
+      <a class="c-pageTop" href="#">
+        <div class="c-pageTop__arrow"></div>
+      </a>
+    </footer>
+    <div class="l-footer__copyright">
+      <p class="c-copyright">
+        <small lang="en">©2024 Hiramaru Portfolio.</small>
+      </p>
+    </div>
+
+    <!-- jquery & iScroll -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <!-- wow.js -->
+    <script src="./js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+    <!-- original -->
+    <script src="./js/script.js"></script>
+  </body>
+</html>
