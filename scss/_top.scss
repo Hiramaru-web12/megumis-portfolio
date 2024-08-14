@@ -343,3 +343,8 @@ skill
       opacity: 1;
     }
   }
+
+  .p-works__button {
+    display: block;
+    margin: f.pxToRem(80) auto 0;
+  }
