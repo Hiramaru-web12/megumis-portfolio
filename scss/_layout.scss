@@ -7,7 +7,6 @@
 header
 =============================================== */
 .l-header {
-  background: v.$color-primary;
   padding: f.pxToRem(10) f.pxToRem(16);
   position: fixed;
   top: 0;
@@ -37,8 +36,8 @@ header
   display: none;
 
   @include m.mq('sp') {
-    display: block;
     background: v.$color-primary;
+    display: block;
     width: 80%;
     height: 100vh;
     position: fixed;
@@ -62,7 +61,7 @@ header
   display: none;
 
   &.is-active{
-    background: rgb(0 0 0 /.5);
+    background: rgb(0 0 0 / .5);
     width: 100%;
     height: 100%;
     display: block;
@@ -97,7 +96,8 @@ header
   padding-top: f.pxToRem(70);
 }
 
-.l-footer__copyright {
+.l-footer {
+  align-items: center;
   background: #fff;
 }
 

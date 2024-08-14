@@ -1,6 +1,6 @@
-@use 'variable';
-@use 'mixin';
-@use 'function';
+@use 'variable' as v;
+@use 'mixin' as m;
+@use 'function' as f;
 
 /* ===============================================
 @acab/reset.css
@@ -40,15 +40,16 @@
 	block-size: 100%;
 	block-size: 100dvb;
 	line-height: 1.5;
-	font-family: variable.$font;
+	font-family: v.$font;
 	-webkit-font-smoothing: antialiased;
 	margin: 0;
   padding: 0;
   font-weight: 400;
   font-style: normal;
   font-size: 1rem;
-  color: #000;
+  color: v.$color-font;
   margin: 0 0 0 auto;
+	background: v.$color-primary;
 }
 
 :where(input, button, textarea, select) {
@@ -80,11 +81,11 @@
   outline: none;
   padding: 0;
   appearance: none;
-  font-family: variable.$font;
+  font-family: v.$font;
   font-size: 1rem;
 	-webkit-appearance: none;
 	-moz-appearance: none;
-  color: #000;
+  color: v.$color-font;
 	background: transparent;
 }
 
