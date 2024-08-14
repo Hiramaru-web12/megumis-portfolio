@@ -3,16 +3,4 @@
 @use 'reset';
 @use 'function' as f;
 
-.l-footer {
-  background: v.$color-primary;
-  padding-top: f.pxToRem(90);
-  padding-bottom: f.pxToRem(40);
-
-   
-}
-
-.l-footer__container {
-  padding-top: f.pxToRem(40);
-  text-align: center;
-}
 
