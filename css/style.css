@@ -232,6 +232,11 @@ drawer
   z-index: 6;
 }
 
+.l-section {
+  padding-top: 5.625rem;
+  padding-bottom: 2.5rem;
+}
+
 @media screen and ( min-width: 1000px ) {
   .l-inner {
     max-width: 60rem;
@@ -249,12 +254,12 @@ drawer
   }
 }
 
-.l-lower-about {
-  padding-top: clamp(5.625rem, 3.644rem + 8.45vw, 11.25rem);
+.l-about__inner {
+  padding: 0 1.875rem;
 }
 
-.l-skill {
-  padding-top: 5.625rem;
+.l-lower-about {
+  padding-top: clamp(5.625rem, 3.644rem + 8.45vw, 11.25rem);
 }
 
 .l-section__container {
@@ -438,18 +443,10 @@ drawer
 }
 
 /* ===============================================
-コピーライト
-=============================================== */
-.c-copyright {
-  text-align: center;
-  padding: 1.875rem 0;
-}
-
-/* ===============================================
 ボタン
 =============================================== */
 .c-button__link {
-  display: block;
+  display: inline-block;
   background: #fff;
   padding: 1em 2em;
   width: 14.5rem;
@@ -497,6 +494,17 @@ drawer
   right: 10px;
 }
 
+/* ===============================================
+コピーライト
+=============================================== */
+.c-copyright {
+  text-align: center;
+  padding: 1.875rem 0;
+}
+
+/* ===============================================
+ボタン
+=============================================== */
 /* ===============================================
 トップへ戻る
 =============================================== */
@@ -681,15 +689,6 @@ fv
 /* ===============================================
 about
 =============================================== */
-.p-about {
-  background: #F7F7F9;
-  padding: 5.625rem 0;
-}
-
-.p-about__inner {
-  padding: 0 1.875rem;
-}
-
 .p-about__container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -737,12 +736,19 @@ about
 .p-about__myname {
   font-size: 1.25rem;
 }
+@media screen and ( max-width: 767px ) {
+  .p-about__myname {
+    font-size: 1rem;
+    text-align: center;
+  }
+}
 .p-about__myname span {
   margin-left: 0.75rem;
 }
 
 .p-about__desc {
   letter-spacing: 1px;
+  font-size: 0.875rem;
 }
 
 /* ===============================================
@@ -755,7 +761,7 @@ works
 .p-works__container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 1.25rem;
+  gap: 2.25rem;
 }
 @media screen and ( max-width: 767px ) {
   .p-works__container {

@@ -75,7 +75,7 @@ header
 
 .l-section {
   padding-top: f.pxToRem(90);
-  padding-bottom: f.pxToRem(60);
+  padding-bottom: f.pxToRem(40);
 }
 
 .l-inner {
@@ -93,13 +93,22 @@ header
   }
 }
 
+.l-about__inner{
+  padding: 0 f.pxToRem(30);
+} 
+
+.l-lower-about {
+  padding-top: clamp(5.625rem, 3.644rem + 8.45vw, 11.25rem);
+}
+
 .l-section__container {
-  padding-top: f.pxToRem(70);
+  padding-top: clamp(2.5rem, 1.84rem + 2.82vw, 4.375rem);
 }
 
 .l-footer {
   align-items: center;
   background: #fff;
+  margin-top: f.pxToRem(160);
 }
 
 .l-works-detal {

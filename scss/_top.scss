@@ -111,15 +111,6 @@ fv
 about
 =============================================== */
 
-.p-about{
-  background: v.$color-primary;
-  padding: f.pxToRem(90) 0;
-}
-
-.p-about__inner{
-  padding: 0 f.pxToRem(30);
-}
-
 .p-about__container {
   display: flex;
   justify-content: space-between;
@@ -150,6 +141,11 @@ about
 .p-about__myname{
   font-size: f.pxToRem(20);
 
+  @include m.mq('sp'){
+    font-size: f.pxToRem(16);
+    text-align: center;
+  } 
+
   span {
     margin-left: f.pxToRem(12);
   }
@@ -157,6 +153,7 @@ about
 
 .p-about__desc {
  letter-spacing: 1px;
+ font-size: f.pxToRem(14);
 }
 
   /* ===============================================
@@ -168,7 +165,7 @@ about
   .p-works__container{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: f.pxToRem(20);
+    gap: f.pxToRem(36);
     
     @include m.mq('sp') {
       grid-template-columns: 1fr;
