@@ -97,7 +97,8 @@ header
   padding: 0 f.pxToRem(30);
 } 
 
-.l-lower-about {
+.l-lower-about,
+.l-lower-works {
   padding-top: clamp(5.625rem, 3.644rem + 8.45vw, 11.25rem);
 }
 
@@ -105,12 +106,12 @@ header
   padding-top: clamp(2.5rem, 1.84rem + 2.82vw, 4.375rem);
 }
 
+.l-works-detal {
+  margin-top: f.pxToRem(60);
+}
+
 .l-footer {
   align-items: center;
   background: #fff;
   margin-top: f.pxToRem(160);
-}
-
-.l-works-detal {
-  margin-top: f.pxToRem(60);
 }

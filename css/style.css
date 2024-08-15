@@ -258,12 +258,17 @@ drawer
   padding: 0 1.875rem;
 }
 
-.l-lower-about {
+.l-lower-about,
+.l-lower-works {
   padding-top: clamp(5.625rem, 3.644rem + 8.45vw, 11.25rem);
 }
 
 .l-section__container {
   padding-top: clamp(2.5rem, 1.84rem + 2.82vw, 4.375rem);
+}
+
+.l-works-detal {
+  margin-top: 3.75rem;
 }
 
 .l-footer {
@@ -272,10 +277,6 @@ drawer
           align-items: center;
   background: #fff;
   margin-top: 10rem;
-}
-
-.l-works-detal {
-  margin-top: 3.75rem;
 }
 
 .p-header__nav {
