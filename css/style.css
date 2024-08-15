@@ -232,11 +232,6 @@ drawer
   z-index: 6;
 }
 
-.l-section {
-  padding-top: 5.625rem;
-  padding-bottom: 3.75rem;
-}
-
 @media screen and ( min-width: 1000px ) {
   .l-inner {
     max-width: 60rem;
@@ -254,8 +249,16 @@ drawer
   }
 }
 
+.l-lower-about {
+  padding-top: clamp(5.625rem, 3.644rem + 8.45vw, 11.25rem);
+}
+
+.l-skill {
+  padding-top: 5.625rem;
+}
+
 .l-section__container {
-  padding-top: 4.375rem;
+  padding-top: clamp(2.5rem, 1.84rem + 2.82vw, 4.375rem);
 }
 
 .l-footer {
@@ -263,6 +266,7 @@ drawer
       -ms-flex-align: center;
           align-items: center;
   background: #fff;
+  margin-top: 10rem;
 }
 
 .l-works-detal {
@@ -742,125 +746,6 @@ about
 }
 
 /* ===============================================
-skill
-=============================================== */
-.p-skill {
-  background: #fff;
-}
-
-.p-skill__container ul {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: auto;
-  gap: 1.25rem;
-  place-items: center;
-}
-@media screen and ( min-width: 768px ) and ( max-width: 999px ) {
-  .p-skill__container ul {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-@media screen and ( max-width: 767px ) {
-  .p-skill__container ul {
-    grid-template-columns: 1fr;
-  }
-}
-
-.p-skill__card {
-  width: min(100%, 25.625rem);
-  height: 18.75rem;
-  background: #fff;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column wrap;
-          flex-flow: column wrap;
-  gap: 1.25rem;
-  padding: 1.75rem 1.25rem 1.25rem;
-  -webkit-box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.1);
-          box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.1);
-}
-.p-skill__card > img {
-  display: block;
-  margin: 0 auto;
-  height: 3.375rem;
-}
-@media screen and ( max-width: 767px ) {
-  .p-skill__card {
-    height: 17.5rem;
-  }
-}
-
-.p-skill__name {
-  text-align: center;
-  line-height: 180%;
-  font-weight: 700;
-}
-
-.p-skill__desc {
-  margin-top: 0.625rem;
-}
-
-/* ===============================================
-skill
-=============================================== */
-.p-service {
-  background: #fff;
-}
-
-.p-service__container ul {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: auto;
-  gap: 1.25rem;
-  place-items: center;
-}
-@media screen and ( min-width: 768px ) and ( max-width: 999px ) {
-  .p-service__container ul {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-@media screen and ( max-width: 767px ) {
-  .p-service__container ul {
-    grid-template-columns: 1fr;
-  }
-}
-
-.p-service__card {
-  width: min(100%, 25.625rem);
-  height: 21.375rem;
-  background: #fff;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column wrap;
-          flex-flow: column wrap;
-  gap: 1.25rem;
-  padding: 1.25rem;
-  -webkit-box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.1);
-          box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.1);
-}
-.p-service__card > img {
-  display: block;
-  margin: 0 auto;
-  height: 8.5rem;
-}
-
-.p-service__name {
-  text-align: center;
-  line-height: 180%;
-  font-weight: 700;
-}
-
-.p-service__desc {
-  padding: 0 1.25rem;
-}
-
-/* ===============================================
 works
 =============================================== */
 .p-works {
@@ -944,6 +829,68 @@ works
 .p-works__button {
   display: block;
   margin: 5rem auto 0;
+}
+
+/* ===============================================
+私について
+=============================================== */
+.p-lower-about__title {
+  font-weight: 700;
+  padding: 0;
+}
+
+.p-lower-about__desc {
+  font-weight: 400;
+  font-size: 0.875rem;
+}
+
+/* ===============================================
+スキル
+=============================================== */
+.p-skill__container ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  gap: 1.25rem;
+  place-items: center;
+}
+@media screen and ( max-width: 767px ) {
+  .p-skill__container ul {
+    grid-template-columns: 1fr;
+  }
+}
+
+.p-skill__card {
+  width: min(100%, 25.625rem);
+  height: 15.625rem;
+  background: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  gap: 1.25rem;
+  padding: 1.75rem 2.25rem 1rem;
+  -webkit-box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.1);
+}
+.p-skill__card img {
+  display: block;
+  margin: 0 auto;
+  height: 3.375rem;
+}
+
+.p-skill__name {
+  text-align: center;
+  line-height: 180%;
+  font-weight: 700;
+}
+
+.p-skill__desc {
+  margin-top: 0.625rem;
+  font-size: 0.875rem;
 }
 
 .p-works-detal__title {
