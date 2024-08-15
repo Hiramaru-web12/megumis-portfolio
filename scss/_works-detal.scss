@@ -3,20 +3,17 @@
 @use 'reset';
 @use 'function' as f;
 
-@use 'layout';
-@use 'header';
-@use 'footer';
-
-
-
 .p-works-detal__title {
   font-weight: 700;
-  font-size: f.pxToRem(20);
+  font-size: clamp(1rem, 0.912rem + 0.38vw, 1.25rem);
+  padding-bottom: f.pxToRem(12);
+  border-bottom: 2px solid v.$color-accent;
 }
 
 .p-works-detal__img {
   max-width: 0 auto;
   box-shadow: 0px 5px 15px 0px rgb(0 0 0 /0.1);
+  margin-top: clamp(2.5rem, 1.972rem + 2.25vw, 4rem);
 }
 
 .p-works-detal__item {
@@ -54,6 +51,8 @@ dl {
   }
 
   dd {
+    font-size: f.pxToRem(14);
+    letter-spacing: 1.4px;
     a{
       color:blue;
       text-decoration: underline;
