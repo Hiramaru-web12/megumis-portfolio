@@ -4,7 +4,7 @@
 @use 'function' as f;
 
 .p-works-detal__title {
-  font-weight: 700;
+  font-weight: v.$font-bold;
   font-size: clamp(1rem, 0.912rem + 0.38vw, 1.25rem);
   padding-bottom: f.pxToRem(12);
   border-bottom: 2px solid v.$color-accent;
@@ -34,7 +34,7 @@ dl {
   }
   
   dt {
-    font-weight: 700;
+    font-weight: v.$font-bold;
     max-width: 600px;
     width: f.pxToRem(120);
     flex-shrink: 0;

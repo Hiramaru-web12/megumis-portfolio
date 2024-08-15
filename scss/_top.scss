@@ -71,7 +71,7 @@ fv
   span {
     color: #fff;
     font-size: f.pxToRem(16);
-    font-weight: 700;
+    font-weight: v.$font-bold;
   }
 
   &::after {

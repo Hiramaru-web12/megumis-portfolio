@@ -8,7 +8,7 @@
 私について
 =============================================== */
 .p-lower-about__title {
-  font-weight: 700;
+  font-weight: v.$font-bold;
   padding: 0;
 }
 
@@ -57,7 +57,7 @@
 .p-skill__name {
   text-align: center;
   line-height: 180%;
-  font-weight: 700;
+  font-weight: v.$font-bold;
 }
 
 .p-skill__desc {
