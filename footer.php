@@ -13,7 +13,6 @@
 <!-- jquery & iScroll -->
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 <!-- wow.js -->
-<script src="./js/wow.min.js"></script>
 <script>
 new WOW().init();
 </script>
