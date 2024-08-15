@@ -98,6 +98,54 @@ drawer
     }
 }
 
+/* ===============================================
+ボタン
+=============================================== */
+.c-button__link {
+  display: inline-block;
+  background: #fff;
+  padding: 1em 2em;
+  width: f.pxToRem(232);
+  text-align: center;
+  box-shadow: 6px 6px v.$color-accent;
+  border: 1px solid v.$color-font;
+  color: v.$color-font;
+  position: relative;
+  cursor: pointer;
+  transition: transform .3s ;
+  
+  &:after {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    width: 50px;
+    height: 1px;
+    background: v.$color-font;
+    top: 48%;
+    right: -25px;
+    transition: all .3s linear;
+  }
+  
+  &:hover {
+    background: v.$color-accent;
+    color: #fff;
+    box-shadow: unset;
+    transform: translateX(6px);
+    border: 1px solid #fff;
+    
+    &:after {
+      content: "";
+      display: inline-block;
+      position: absolute;
+      width: 10px;
+      height: 1px;
+      background: #fff;
+      top: 48%;
+      right: 10px;
+    }
+}
+}
+
 
 /* ===============================================
 コピーライト
