@@ -41,7 +41,8 @@
         <div class="l-drawer__inner">
           <ul class="p-drawer__nav">
             <li><a href="<?php echo esc_url(home_url('/')); ?>">ホーム</a></li>
-            <li><a href="<?php echo esc_url(home_url('/')); ?>about/">私について</a></li>
+            <li><a href="<?php echo esc_url(home_url('/')); ?>about/">私について</a>
+            </li>
             <li><a href="<?php echo esc_url(home_url('/')); ?>works/">制作実績</a></li>
             <li>
               <a href="https://x.com/hrmr_crt96">
@@ -63,9 +64,14 @@
       <div class="l-drawer__bg"></div>
 
       <ul class="p-header__nav">
-        <li><a href="<?php echo esc_url(home_url('/')); ?>">ホーム</a></li>
-        <li><a href="<?php echo esc_url(home_url('/')); ?>about/">私について</a></li>
-        <li><a href="<?php echo esc_url(home_url('/')); ?>works/">制作実績</a></li>
+        <li><a href="<?php echo esc_url(home_url('/')); ?>" <?php if(is_front_page())echo ' class="current"'; ?>>ホーム</a>
+        </li>
+        <li><a href="<?php echo esc_url(home_url('/')); ?>about/"
+            <?php if(is_page('about')) echo ' class="current"'; ?>>私について</a>
+        </li>
+        <li><a href="<?php echo esc_url(home_url('/')); ?>works/"
+            <?php if(is_post_type_archive('works') || is_singular('works') ) echo ' class="current"'; ?>>制作実績</a>
+        </li>
         <li>
           <a href="https://x.com/hrmr_crt96"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="50px"
               height="50px">
