@@ -256,12 +256,17 @@ drawer
 
 .l-about__inner {
   padding: 0 1.875rem;
+  container-type: inline-size;
 }
 
 .l-lower-about,
 .l-lower-works {
   padding-top: clamp(2.5rem, 1.642rem + 3.66vw, 4.938rem);
   padding-bottom: 2.5rem;
+}
+
+.l-lower-about__inner {
+  container-type: inline-size;
 }
 
 .l-breadcrub {
@@ -682,15 +687,12 @@ about
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   gap: clamp(1.25rem, -0.07rem + 5.63vw, 5rem);
 }
-@media screen and ( max-width: 767px ) {
+@container (width < 760px) {
   .p-about__container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -723,11 +725,10 @@ about
 }
 
 .p-about__myname {
-  font-size: 1.25rem;
+  font-size: clamp(1rem, 0.912rem + 0.38vw, 1.25rem);
 }
 @media screen and ( max-width: 767px ) {
   .p-about__myname {
-    font-size: 1rem;
     text-align: center;
   }
 }
@@ -829,6 +830,28 @@ works
 /* ===============================================
 私について
 =============================================== */
+.p-lower-about__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: clamp(1.25rem, -0.07rem + 5.63vw, 5rem);
+}
+@container (width < 800px) {
+  .p-lower-about__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    place-items: center;
+  }
+}
+
 .p-lower-about__title {
   font-weight: 700;
   padding: 0;

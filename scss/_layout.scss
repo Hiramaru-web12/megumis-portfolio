@@ -95,12 +95,17 @@ header
 
 .l-about__inner{
   padding: 0 f.pxToRem(30);
+  container-type: inline-size;
 } 
 
 .l-lower-about,
 .l-lower-works {
   padding-top: clamp(2.5rem, 1.642rem + 3.66vw, 4.938rem);
   padding-bottom: f.pxToRem(40);
+}
+
+.l-lower-about__inner {
+  container-type: inline-size;
 }
 
 .l-breadcrub {

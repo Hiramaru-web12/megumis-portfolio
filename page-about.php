@@ -5,14 +5,14 @@
 </div>
 
 <section class="l-lower-about">
-  <div class="p-about__inner l-inner">
+  <div class="l-lower-about__inner l-inner">
     <h2 class="c-section__title wow fadeInUp">私について</h2>
-    <div class="p-about__container l-section__container">
+    <div class="p-lower-about__container l-section__container">
       <div class="p-about__img wow fadeInLeft delay-2s">
         <img src="<?php echo get_template_directory_uri( ) ?>/img/my-icon.png" alt="プロフィール画像" height="380"
           width="380" />
       </div>
-      <div class="p-about__text wow fadeInRight delay-2s">
+      <div class="p-about__text wow fadeInUP">
         <p class="p-about__myname">OHIRA MEGUMI <span>- Web Corder -</span></p>
         <div class="p-about__desc">
           <p class="p-lower-about__title">経歴：</p>

@@ -113,16 +113,15 @@ about
 
 .p-about__container {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   gap: clamp(1.25rem, -0.07rem + 5.63vw, 5rem);
-
-  @include m.mq('sp') {
+  
+  @container (width < 760px) {
     flex-flow: column wrap;
     justify-content: center;
     place-items: center;
-
   }
+
 }
 
 .p-about__img {
@@ -139,10 +138,9 @@ about
 }
 
 .p-about__myname{
-  font-size: f.pxToRem(20);
+  font-size: clamp(1rem, 0.912rem + 0.38vw, 1.25rem);
 
   @include m.mq('sp'){
-    font-size: f.pxToRem(16);
     text-align: center;
   } 
 

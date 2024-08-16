@@ -7,6 +7,19 @@
 /* ===============================================
 私について
 =============================================== */
+
+.p-lower-about__container {
+  display: flex;
+  align-items: center;
+  gap: clamp(1.25rem, -0.07rem + 5.63vw, 5rem);
+  
+  @container (width < 800px) {
+    flex-flow: column wrap;
+    justify-content: center;
+    place-items: center;
+  }
+
+}
 .p-lower-about__title {
   font-weight: v.$font-bold;
   padding: 0;
