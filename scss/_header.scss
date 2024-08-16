@@ -4,28 +4,47 @@
 @use 'function' as f;
 
 .p-header__nav {
-  display: none;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  gap: f.pxToRem(32);
   
-  @include m.mq('pc'){
-    display: block;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    gap: f.pxToRem(24);
+  li {
+    font-size: clamp(1rem, 0.714rem + 0.6vw, 1.25rem);
+    margin: auto;
+    position: relative;
     
-    li {
-      font-size: f.pxToRem(16);
-      margin: auto;
+    a {
+      transition: 0.5s ease-out;
       
-      a {
-        transition: 0.5s ease-out;
+      &::after {
+        position: absolute;
+        content: "";
+        display: inline-block;
+        width: f.pxToRem(24);
+        height: f.pxToRem(2);
+        bottom:-6px;
+        left: 50%;
+        background: v.$color-accent;
+        transform: translateX(-50%) scale(0 , 1);
+        transition: 0.3s ease-out;
         cursor: pointer;
-    
-        &:hover {
-          opacity: .6;
-        }
+      }
+      
+      &:hover,
+      &.current {
+        color: v.$color-accent;
+        
+        &::after {
+          transform: translateX(-50%) scale(1 , 1);
+        } 
       }
     }
+  }
+
+  @include m.mq('sp'){
+    display: none;
   } 
 }
 
