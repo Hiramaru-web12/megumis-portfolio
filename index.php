@@ -8,8 +8,8 @@
     <span>scrool</span>
   </div>
   <picture class="p-fv__img">
-    <source media="(min-width: 768px)" srcset="./img/fv.png" />
-    <img src="./img/fv-sp.png" alt="ファーストビュー" />
+    <source media="(min-width: 768px)" srcset="<?php echo get_template_directory_uri( ) ?>/img/fv.png" />
+    <img src="<?php echo get_template_directory_uri( ) ?>/img/fv-sp.png" alt="ファーストビュー" />
   </picture>
 </div>
 
@@ -18,7 +18,8 @@
     <h2 class="c-section__title wow fadeInUp">私について</h2>
     <div class="p-about__container l-section__container">
       <div class="p-about__img wow fadeInLeft delay-2s">
-        <img src="img/my-icon.png" alt="プロフィール画像" height="380" width="380" />
+        <img src="<?php echo get_template_directory_uri( ) ?>/img/my-icon.png" alt="プロフィール画像" height="380"
+          width="380" />
       </div>
       <div class="p-about__text wow fadeInRight delay-2s">
         <p class="p-about__myname">OHIRA MEGUMI <span>- Web Corder -</span></p>
@@ -42,7 +43,8 @@
       <article class="p-works__item wow fadeInUp">
         <a class="p-works__link" href="works01/">
           <div class="p-item__content">
-            <img src="./img/hiramaru-nouen.png" alt="架空の農園サイト" width="314" height="180" />
+            <img src="<?php echo get_template_directory_uri( ) ?>/img/hiramaru-nouen.png" alt="架空の農園サイト" width="314"
+              height="180" />
             <div class="p-item__mask">
               <p class="p-item__mask-text">もっとみる</p>
             </div>
@@ -53,7 +55,8 @@
       <article class="p-works__item wow fadeInUp">
         <a class="p-works__link" href="works02/">
           <div class="p-item__content">
-            <img src="./img/aobotan-koumuten.png" alt="架空の工務店サイト" width="314" height="180" />
+            <img src="<?php echo get_template_directory_uri( ) ?>/img/aobotan-koumuten.png" alt="架空の工務店サイト" width="314"
+              height="180" />
             <div class="p-item__mask">
               <p class="p-item__mask-text">もっとみる</p>
             </div>
