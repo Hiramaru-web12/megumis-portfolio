@@ -160,7 +160,7 @@ header
 =============================================== */
 .l-header {
   padding: 0.625rem 1rem;
-  background: #F7F7F9;
+  background: #fff;
   position: fixed;
   top: 0;
   right: 0;
@@ -309,10 +309,10 @@ drawer
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    gap: 2.5rem;
+    gap: 1.5rem;
   }
   .p-header__nav li {
-    font-size: 1.25rem;
+    font-size: 1rem;
     margin: auto;
   }
   .p-header__nav li a {

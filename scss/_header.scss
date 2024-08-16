@@ -11,10 +11,10 @@
     justify-content: center;
     align-items: center;
     display: flex;
-    gap: f.pxToRem(40);
+    gap: f.pxToRem(24);
     
     li {
-      font-size: f.pxToRem(20);
+      font-size: f.pxToRem(16);
       margin: auto;
       
       a {
