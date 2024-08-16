@@ -32,16 +32,5 @@ $(function(){
   return false;
  });
 
- // スクロール検知
- $(window).on('scroll', function() {
-  // トップから100px以上スクロールしたら
-  if (100 < jQuery(this).scrollTop()) {
-    // is-showクラスをつける
-    $('.c-pageTop').addClass( 'is-show' );
-  } else {
-    // 100pxを下回ったらis-showクラスを削除
-    $('.c-pageTop').removeClass( 'is-show' );
-  }
-});
 });
 
