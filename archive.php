@@ -1,5 +1,8 @@
 <?php get_header(); ?>
 
+<div class="l-breadcrub p-breadcrub l-inner">
+  <?php bcn_display(); ?>
+</div>
 <section class="l-lower-works">
   <div class="l-lower-works__inner l-inner">
     <h2 class="c-section__title wow fadeInUp">制作実績</h2>
