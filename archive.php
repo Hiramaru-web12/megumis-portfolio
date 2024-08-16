@@ -7,30 +7,34 @@
   <div class="l-lower-works__inner l-inner">
     <h2 class="c-section__title wow fadeInUp">制作実績</h2>
     <div class="p-works__container l-section__container">
+
+      <?php
+       $works_query = new WP_Query(
+        array(
+          'post_type' => 'works',
+          'post_per_page' => 10,
+         )
+        );
+      ?>
+      <?php  if($works_query->have_posts()) : ?>
+      <?php  while($works_query->have_posts()) : ?>
+      <?php $works_query->the_post(); ?>
       <article class="p-works__item wow fadeInUp">
-        <a class="p-works__link" href="works01/">
+        <a class="p-works__link" href="<?php the_permalink(); ?>">
           <div class="p-item__content">
-            <img src="<?php echo get_template_directory_uri( ) ?>/img/hiramaru-nouen.png" alt="架空の農園サイト" width="314"
-              height="180" />
+            <?php if (has_post_thumbnail( )) : ?>
+            <?php the_post_thumbnail();?>
+            <?php endif; ?>
             <div class="p-item__mask">
               <p class="p-item__mask-text">もっとみる</p>
             </div>
           </div>
         </a>
-        <p class="p-works__siteTitle">ひらまる農園 / 架空の静的サイト</p>
+        <p class="p-works__siteTitle"><?php the_title(); ?></p>
       </article>
-      <article class="p-works__item wow fadeInUp">
-        <a class="p-works__link" href="works02/">
-          <div class="p-item__content">
-            <img src="<?php echo get_template_directory_uri( ) ?>/img/aobotan-koumuten.png" alt="架空の工務店サイト" width="314"
-              height="180" />
-            <div class="p-item__mask">
-              <p class="p-item__mask-text">もっとみる</p>
-            </div>
-          </div>
-        </a>
-        <p class="p-works__siteTitle">青牡丹工務店 / 架空の静的サイト</p>
-      </article>
+      <?php endwhile; ?>
+      <?php endif; ?>
+
     </div>
 
   </div>
