@@ -2,38 +2,62 @@
 <section class="l-works-detal l-section">
   <div class="l-works-detal__inner l-inner">
     <div class="p-works-detal__container">
-      <div class="p-works-detal__title">ひらまる農園（架空/静的サイト）</div>
+      <?php echo nl2br( esc_html( get_field( 'works' ) ) ); ?>
+      <div class="p-works-detal__title"><?php the_title(); ?></div>
       <div class="p-works-detal__img">
-        <img src="../img/hiramaru-nouen.png" alt="架空の農園サイト">
+        <?php the_post_thumbnail(); ?>
       </div>
+
+
       <dl class="p-works-detal__desc">
+        <?php if( get_field('url') ) : ?>
         <div class="p-works-detal__item">
           <dt>サイトURL</dt>
-          <dd><a
-              href="https://hiramaru.site/hiramaru-farm-portfolio/">https://hiramaru.site/hiramaru-farm-portfolio/</a>
-          </dd>
+          <dd><a href="<?php the_field('url'); ?>"><?php the_field('url'); ?></a></dd>
         </div>
+        <?php endif; ?>
+        <?php if( get_field('id') ) : ?>
+        <div class="p-works-detal__item">
+          <dt>ユーザー名</dt>
+          <dd><?php the_field('id'); ?></dd>
+        </div>
+        <?php endif;?>
+        <?php if( get_field('pass') ) : ?>
+        <div class="p-works-detal__item">
+          <dt>パスワード</dt>
+          <dd><?php the_field('pass'); ?></dd>
+        </div>
+        <?php endif; ?>
+        <?php if( get_field('page') ) : ?>
         <div class="p-works-detal__item">
           <dt>ページ数</dt>
-          <dd>1ページ</dd>
+          <dd><?php the_field('page'); ?></dd>
         </div>
+        <?php endif; ?>
+        <?php if( get_field('overview') ) : ?>
         <div class="p-works-detal__item">
           <dt>概要</dt>
-          <dd>地元福島のお米農家を紹介した架空のサイトです。配色は水田をイメージ、アクセントのイラストは和をイメージしました。商品紹介のところはswiperを使用しています。wow.jsでアニメーションを追加してあります。
-          </dd>
+          <dd><?php the_field('overview'); ?></dd>
         </div>
+        <?php endif; ?>
+        <?php if( get_field('skill') ) : ?>
         <div class="p-works-detal__item">
           <dt>使用スキル</dt>
-          <dd>html/css(scss), javascript(JOuery), Figma, Photoshop, canva</dd>
+          <dd><?php the_field('skill'); ?></dd>
         </div>
+        <?php endif; ?>
+        <?php if( get_field('period') ) : ?>
+        <div class="p-works-detal__item">
+          <dt>制作期間</dt>
+          <dd><?php the_field('period') ?></dd>
+        </div>
+        <?php endif; ?>
+        <?php if( get_field('position') ) : ?>
         <div class="p-works-detal__item">
           <dt>担当範囲</dt>
-          <dd>デザイン、コーディング</dd>
+          <dd><?php the_field('position') ?></dd>
         </div>
-        <div class="p-works-detal__item">
-          <dt>製作期間</dt>
-          <dd>14日</dd>
-        </div>
+        <?php endif; ?>
       </dl>
     </div>
   </div>
