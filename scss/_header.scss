@@ -60,7 +60,6 @@ drawer
   li {
     gap: f.pxToRem(10);
     padding: f.pxToRem(10) 0;
-    font-weight: 500;
 
     &:not(:last-child){
       border-bottom: 1px solid v.$color-font;
