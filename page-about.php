@@ -58,7 +58,7 @@
         <li class="p-skill__card">
           <img src="<?php echo get_template_directory_uri( ) ?>/img/skill-4.png" alt="wordpress">
           <p class="p-skill__name">WordPress</p>
-          <p class="p-skill__desc">既存のサイトをWordPress化し、カスタム投稿やカスタムフィールドの追加を実装させることができます。</p>
+          <p class="p-skill__desc">既存のサイトをWordPress化し、カスタム投稿やカスタムフィールドの追加が可能です。</p>
         </li>
       </ul>
     </div>
