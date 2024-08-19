@@ -7,8 +7,6 @@
       <div class="p-works-detal__img">
         <?php the_post_thumbnail(); ?>
       </div>
-
-
       <dl class="p-works-detal__desc">
         <?php if( get_field('url') ) : ?>
         <div class="p-works-detal__item">
@@ -60,6 +58,8 @@
         <?php endif; ?>
       </dl>
     </div>
+
+    <?php get_template_part('template-parts/post-link'); ?>
   </div>
 </section>
 

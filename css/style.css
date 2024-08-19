@@ -738,7 +738,11 @@ about
 
 .p-about__desc {
   letter-spacing: 1px;
-  font-size: 0.875rem;
+}
+@media screen and ( max-width: 767px ) {
+  .p-about__desc {
+    font-size: 0.875rem;
+  }
 }
 
 /* ===============================================
@@ -859,7 +863,6 @@ works
 
 .p-lower-about__desc {
   font-weight: 400;
-  font-size: 0.875rem;
 }
 
 /* ===============================================
@@ -908,7 +911,11 @@ works
 
 .p-skill__desc {
   margin-top: 0.625rem;
-  font-size: 0.875rem;
+}
+@media screen and ( max-width: 767px ) {
+  .p-skill__desc {
+    font-size: 0.875rem;
+  }
 }
 
 .p-works-detal__title {
@@ -969,10 +976,103 @@ dl dt, dl dd {
   }
 }
 dl dd {
-  font-size: 0.875rem;
   letter-spacing: 1.4px;
+}
+@media screen and ( max-width: 767px ) {
+  dl dd {
+    font-size: 0.875rem;
+  }
 }
 dl dd a {
   color: blue;
   text-decoration: underline;
+}
+
+/* ===============================================
+ポストリンク
+=============================================== */
+.p-article__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  gap: 1.25rem;
+  margin-top: clamp(2.25rem, 1.392rem + 3.66vw, 4.688rem);
+  position: relative;
+}
+.p-article__link li {
+  font-size: 0.875rem;
+  border: 1px solid #777A85;
+  border-radius: 4px;
+  color: #777A85;
+}
+.p-article__link li a {
+  display: block;
+  width: 100%;
+  padding: 0.625rem;
+}
+.p-article__link li.prev, .p-article__link li.next {
+  width: 7.75rem;
+  background: #777A85;
+  color: #fff;
+}
+.p-article__link li.prev:hover, .p-article__link li.next:hover {
+  background: #3E3E3E;
+  border: 1px solid #3E3E3E;
+}
+.p-article__link li.prev {
+  position: absolute;
+  padding-left: 1.25rem;
+  right: calc(50% + 65px);
+  -webkit-transition: 0.3s ease-out;
+  transition: 0.3s ease-out;
+}
+.p-article__link li.prev::before {
+  position: absolute;
+  display: inline-block;
+  left: 0.5rem;
+  content: url("../img/arrow-icon-left.png");
+  top: 55%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  pointer-events: none;
+}
+.p-article__link li.next {
+  position: absolute;
+  padding-right: 1.25rem;
+  left: calc(50% + 65px);
+  -webkit-transition: 0.3s ease-out;
+  transition: 0.3s ease-out;
+}
+.p-article__link li.next::after {
+  position: absolute;
+  display: block;
+  line-height: 1.5rem;
+  right: 0.5rem;
+  content: url("../img/arrow-icon-right.png");
+  top: 55%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  pointer-events: none;
+}
+.p-article__link li.to-archive {
+  background: #fff;
+  color: #777A85;
+  width: 5.625rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: 0.5s ease-out;
+  transition: 0.5s ease-out;
+}
+.p-article__link li.to-archive:hover {
+  color: #fff;
+  background: #3E3E3E;
+  border: 1px solid #3E3E3E;
 }

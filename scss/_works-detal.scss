@@ -51,11 +51,105 @@ dl {
   }
 
   dd {
-    font-size: f.pxToRem(14);
     letter-spacing: 1.4px;
-    a{
+
+    @include m.mq('sp'){
+      font-size: f.pxToRem(14);
+    } 
+
+    a {
       color:blue;
       text-decoration: underline;
     }
   }
 }
+
+/* ===============================================
+ポストリンク
+=============================================== */
+
+.p-article__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: f.pxToRem(20);
+  margin-top: clamp(2.25rem, 1.392rem + 3.66vw, 4.688rem);
+  position: relative;
+  
+  li {
+    font-size: f.pxToRem(14);
+    border: 1px solid v.$color-nav;
+    border-radius: 4px;
+    color: v.$color-nav;
+
+    
+    a {
+      display: block;
+      width: 100%;
+      padding: f.pxToRem(10);
+    }
+    
+    &.prev,
+    &.next {
+      width: f.pxToRem(124);
+      background: v.$color-nav;
+      color: #fff;
+
+      &:hover {
+        background: v.$color-font;
+        border: 1px solid v.$color-font;
+     }
+    }
+    
+    &.prev {
+      position: absolute;
+      padding-left: f.pxToRem(20);
+      right: calc(50% + 65px);
+      transition: 0.3s ease-out;
+      
+      &::before {
+        position: absolute;
+        display: inline-block;
+        left: f.pxToRem(8);
+        content: url("../img/arrow-icon-left.png");
+        top: 55%;
+        transform: translateY(-50%);
+        pointer-events: none;
+      }
+    }
+
+    &.next {
+      position: absolute;
+      padding-right: f.pxToRem(20);
+      left: calc(50% + 65px);
+      transition: 0.3s ease-out;
+      
+    
+      &::after {
+        position: absolute;
+        display: block;
+        line-height: f.pxToRem(24); 
+        right: f.pxToRem(8);
+        content: url("../img/arrow-icon-right.png");
+        top: 55%;
+        transform: translateY(-50%);
+        pointer-events: none;
+      }
+    }
+
+    &.to-archive {
+      background: #fff;
+      color: v.$color-nav;
+      width: f.pxToRem(90);
+      justify-content: center;
+      transition: 0.5s ease-out;
+
+      &:hover {
+        color: #fff;
+        background: v.$color-font;
+        border: 1px solid v.$color-font;
+      }
+    }
+  }
+}  
