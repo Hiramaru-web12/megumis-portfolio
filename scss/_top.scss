@@ -151,7 +151,10 @@ about
 
 .p-about__desc {
  letter-spacing: 1px;
- font-size: f.pxToRem(14);
+
+ @include m.mq('sp'){
+  font-size: f.pxToRem(14);
+ } 
 }
 
   /* ===============================================

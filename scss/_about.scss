@@ -27,7 +27,6 @@
 
 .p-lower-about__desc {
   font-weight: 400;
-  font-size: f.pxToRem(14);
 }
 
 /* ===============================================
@@ -75,5 +74,8 @@
 
 .p-skill__desc {
   margin-top: f.pxToRem(10);
-  font-size: f.pxToRem(14);
+
+  @include m.mq('sp'){
+    font-size: f.pxToRem(14);
+  } 
 }
