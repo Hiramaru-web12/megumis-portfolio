@@ -107,6 +107,10 @@ dl {
       padding-left: f.pxToRem(20);
       right: calc(50% + 65px);
       transition: 0.3s ease-out;
+
+      @include m.mq('sp'){
+        right: calc(50% + 50px);
+      } 
       
       &::before {
         position: absolute;
@@ -124,8 +128,11 @@ dl {
       padding-right: f.pxToRem(20);
       left: calc(50% + 65px);
       transition: 0.3s ease-out;
+
+      @include m.mq('sp'){
+        left: calc(50% + 50px);
+      }
       
-    
       &::after {
         position: absolute;
         display: block;

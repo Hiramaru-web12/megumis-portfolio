@@ -1033,6 +1033,11 @@ dl dd a {
   -webkit-transition: 0.3s ease-out;
   transition: 0.3s ease-out;
 }
+@media screen and ( max-width: 767px ) {
+  .p-article__link li.prev {
+    right: calc(50% + 50px);
+  }
+}
 .p-article__link li.prev::before {
   position: absolute;
   display: inline-block;
@@ -1049,6 +1054,11 @@ dl dd a {
   left: calc(50% + 65px);
   -webkit-transition: 0.3s ease-out;
   transition: 0.3s ease-out;
+}
+@media screen and ( max-width: 767px ) {
+  .p-article__link li.next {
+    left: calc(50% + 50px);
+  }
 }
 .p-article__link li.next::after {
   position: absolute;
