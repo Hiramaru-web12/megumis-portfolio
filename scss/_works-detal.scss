@@ -81,12 +81,10 @@ dl {
     font-size: f.pxToRem(14);
     border: 1px solid v.$color-nav;
     border-radius: 4px;
-    color: v.$color-nav;
+    color: v.$color-nav;    
 
-    
     a {
       display: block;
-      width: 100%;
       padding: f.pxToRem(10);
     }
     
@@ -104,10 +102,10 @@ dl {
     
     &.prev {
       position: absolute;
-      padding-left: f.pxToRem(20);
       right: calc(50% + 65px);
       transition: 0.3s ease-out;
 
+      
       @include m.mq('sp'){
         right: calc(50% + 50px);
       } 
@@ -115,7 +113,7 @@ dl {
       &::before {
         position: absolute;
         display: inline-block;
-        left: f.pxToRem(8);
+        right: f.pxToRem(102);
         content: url("../img/arrow-icon-left.png");
         top: 55%;
         transform: translateY(-50%);
@@ -125,7 +123,6 @@ dl {
 
     &.next {
       position: absolute;
-      padding-right: f.pxToRem(20);
       left: calc(50% + 65px);
       transition: 0.3s ease-out;
 
@@ -137,7 +134,7 @@ dl {
         position: absolute;
         display: block;
         line-height: f.pxToRem(24); 
-        right: f.pxToRem(8);
+        left: f.pxToRem(102);
         content: url("../img/arrow-icon-right.png");
         top: 55%;
         transform: translateY(-50%);

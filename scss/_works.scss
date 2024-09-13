@@ -2,3 +2,82 @@
 @use 'variable' as v;
 @use 'reset';
 @use 'function' as f;
+
+/* ===============================================
+ページネーション
+=============================================== */
+    
+.page-numbers {
+  font-size: f.pxToRem(14);
+  border: 1px solid v.$color-nav;
+  border-radius: 4px;
+  width: f.pxToRem(34);
+  height: f.pxToRem(36);
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  color: v.$color-nav;
+  line-height: f.pxToRem(36); 
+  transition: 0.5s ease-out;
+
+  &:hover {
+    background: v.$color-font;
+    border: 1px solid v.$color-font;
+    color: #fff;
+  }
+
+  a {
+    display: block;
+    width: 100%;
+  }
+  
+  &.prev,
+  &.next {
+    width: f.pxToRem(72);
+    background: v.$color-nav;
+    color: #fff;
+
+    &:hover {
+      background: v.$color-font;
+      border: 1px solid v.$color-font;
+    }
+  }
+
+  &.prev {
+    position: relative;
+    padding-left: f.pxToRem(12);
+  
+    &::before {
+      position: absolute;
+      display: block;
+      left: f.pxToRem(8);
+      content: url("../img/arrow-icon-left.png");
+      top: 55%;
+      transform: translateY(-50%);
+      pointer-events: none;
+    }
+
+    
+  }
+
+  &.next {
+    position: relative;
+    padding-right: f.pxToRem(12);
+  
+    &::before {
+      position: absolute;
+      display: block;
+      right: f.pxToRem(8);
+      content: url("../img/arrow-icon-right.png");
+      top: 55%;
+      transform: translateY(-50%);
+      pointer-events: none;
+    }
+  }
+
+  &.current {
+    background: v.$color-nav;
+    color: #fff;
+  }
+}  
