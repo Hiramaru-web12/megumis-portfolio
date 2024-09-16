@@ -3,6 +3,10 @@
 @use 'reset';
 @use 'function' as f;
 
+.p-header {
+  background: rgb(255 255 255 / 0.8);
+}
+
 .p-header__nav {
   display: block;
   justify-content: center;
@@ -22,8 +26,8 @@
         position: absolute;
         content: "";
         display: inline-block;
-        width: f.pxToRem(24);
-        height: f.pxToRem(2);
+        width: f.pxToRem(30);
+        height: f.pxToRem(1);
         bottom:-6px;
         left: 50%;
         background: v.$color-accent;

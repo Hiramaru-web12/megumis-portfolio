@@ -23,7 +23,7 @@
 
 <body>
   <!-- header -->
-  <header id="js-header" class="l-header">
+  <header id="js-header" class="l-header p-header">
     <div class="l-header__inner">
       <div class="c-header__logo">
         <a href="<?php echo esc_url(home_url('/')); ?>">
