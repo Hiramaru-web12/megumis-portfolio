@@ -105,20 +105,18 @@ fv
 	border-right: 5px solid v.$color-font;	/*点滅バー*/
 	overflow: hidden;	/*必須*/
 	white-space: nowrap;	/*必須*/
-	
 	line-height:1.4;
 	font-weight:700;
-	animation: typing 1.5s steps(18), blink .4s step-end infinite alternate;	
+	animation: typing 1.8s steps(18) forwards, blink 0.4s step-end infinite alternate;
 }
+
 @keyframes typing {
-	from {
-		width: 0;
-	}
+  from { width: 0 }
+  to { width: 100% }
 }
+
 @keyframes blink {
-	50% {
-		border-color: transparent;		/*点滅風に見せる*/
-	}
+  50% { border-color: transparent }
 }
 
 /* ===============================================

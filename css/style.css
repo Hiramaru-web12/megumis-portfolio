@@ -697,13 +697,16 @@ fv
   white-space: nowrap; /*必須*/
   line-height: 1.4;
   font-weight: 700;
-  -webkit-animation: typing 1.5s steps(18), blink 0.4s step-end infinite alternate;
-          animation: typing 1.5s steps(18), blink 0.4s step-end infinite alternate;
+  -webkit-animation: typing 1.8s steps(18) forwards, blink 0.4s step-end infinite alternate;
+          animation: typing 1.8s steps(18) forwards, blink 0.4s step-end infinite alternate;
 }
 
 @-webkit-keyframes typing {
   from {
     width: 0;
+  }
+  to {
+    width: 100%;
   }
 }
 
@@ -711,15 +714,18 @@ fv
   from {
     width: 0;
   }
+  to {
+    width: 100%;
+  }
 }
 @-webkit-keyframes blink {
   50% {
-    border-color: transparent; /*点滅風に見せる*/
+    border-color: transparent;
   }
 }
 @keyframes blink {
   50% {
-    border-color: transparent; /*点滅風に見せる*/
+    border-color: transparent;
   }
 }
 /* ===============================================
