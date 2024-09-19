@@ -10,21 +10,18 @@ fv
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr auto;
-
-  @include m.mq('sp'){
-    margin-top: f.pxToRem(60);
-  } 
 }
 
 .p-fv__img {
-  height: f.pxToRem(700);
   filter: opacity(50%);
-  grid-area: 1 / 1;
-  
-  @include m.mq('sp'){
-    height: f.pxToRem(500);
+  grid-area: 1 / -1;
+
+  @include m.mq('sp') {
+    max-height: f.pxToRem(500);
+    overflow: hidden;
   } 
 }
+ 
 
 .p-fv__content {
  display: flex;
@@ -32,12 +29,12 @@ fv
  gap: f.pxToRem(20);
  justify-content: center;
  text-align: center;
- margin: f.pxToRem(160) auto f.pxToRem(100);
- grid-area: 1 / 1;
+ margin: 0 auto;
+ grid-area: 1 / -1;
  z-index: 1;
 
  @include m.mq('sp') {
-  margin: f.pxToRem(100) auto f.pxToRem(60);
+  margin: 0 auto f.pxToRem(30);
  } 
   
   > h1{
@@ -56,10 +53,13 @@ fv
   position: relative;
   text-align: center;
   z-index: 1;
-  grid-area: 1 / 1;
+  grid-area: 1 / 2;
   align-self: end; 
-  padding-bottom: f.pxToRem(20); /* 下部に少し余白を追加 */
+  bottom: f.pxToRem(50);
 
+  @media (768px <= width < 1280px){ 
+    bottom : f.pxToRem(-10);
+  }
 
   span {
     font-size: f.pxToRem(16);
@@ -179,7 +179,7 @@ about
   }
   .p-works__container{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
     gap: f.pxToRem(36);
     
     @include m.mq('sp') {

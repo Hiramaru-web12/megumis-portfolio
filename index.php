@@ -1,13 +1,16 @@
 <?php get_header(); ?>
 <div class="p-fv">
-  <div class="p-fv__img"> <img src="<?php echo get_template_directory_uri( ) ?>/img/fv.png" alt="ファーストビュー" /></div>
   <div class="p-fv__content wow fadeIn">
     <h1 class="p-fv__copy typing-animation">Megumi's Portforio.</h1>
     <p>コードで形にする、広がるWebの可能性。</p>
   </div>
   <div class="p-fv__scroll">
-    <span>scrool</span>
+    <span>scroll</span>
   </div>
+  <picture class="p-fv__img">
+    <source media="(min-width: 768px)" srcset="<?php echo get_template_directory_uri( ) ?>/img/fv.png">
+    <img src="<?php echo get_template_directory_uri( ) ?>/img/fv-sp.png" alt="ファーストビュー" decoding="async" height="500">
+  </picture>
 </div>
 
 <section class="l-about l-section">
@@ -41,10 +44,11 @@
       $args = array(
         'post_type' => 'works', 
         'posts_per_page' => 3, 
+        
         'tax_query' => array(
           array(
             'taxonomy' => 'item_tag', 
-              
+            'field'    => 'slug',
             'terms'    => 'pickup', 
           ),
         ),
