@@ -7,69 +7,61 @@
 fv
 =============================================== */
 .p-fv {
-  margin-top: f.pxToRem(86);
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: auto;
+  grid-template-rows: 1fr auto;
 
   @include m.mq('sp'){
     margin-top: f.pxToRem(60);
   } 
-  
-  img {
-    width: 100%;
-    height: 100%;
-    min-height: 0;
-    object-fit: cover;
-  }
-  
-  &:after {
-    content: "";
-    background: #000;
-    grid-column: 12 / -1;
-    grid-row: 12 / 1;
-    opacity: .2;
-  }
 }
 
 .p-fv__img {
-  grid-column: 12 / -1;
-  grid-row: 12 / 1;
+  height: f.pxToRem(700);
+  filter: opacity(50%);
+  grid-area: 1 / 1;
+  
+  @include m.mq('sp'){
+    height: f.pxToRem(500);
+  } 
 }
 
 .p-fv__content {
-  color: #fff;
-  z-index: 1;
-  display: flex;
-  flex-flow: column wrap;
-  grid-column: 12 / -1;
-  grid-row: 12 / 1;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  gap: f.pxToRem(10);
+ display: flex;
+ flex-direction: column;
+ gap: f.pxToRem(20);
+ justify-content: center;
+ text-align: center;
+ margin: f.pxToRem(160) auto f.pxToRem(100);
+ grid-area: 1 / 1;
+ z-index: 1;
+
+ @include m.mq('sp') {
+  margin: f.pxToRem(100) auto f.pxToRem(60);
+ } 
   
   > h1{
-    font-size: clamp(2rem, 1.296rem + 3vw, 4rem);
+    font-size: clamp(1.75rem, 1.134rem + 2.63vw, 3.5rem);
+    line-height: 1.2;
   }
 
   > p {
-    font-size:clamp(1rem, 0.857rem + 0.71vw, 1.5rem);
+    font-size: clamp(1rem, 0.912rem + 0.38vw, 1.25rem);
   }
 }
 
 .p-fv__scroll {
   content: "";
-  z-index: 1;
-  height: 140px;
-  display: grid;
-  grid-row: 8 ;
-  grid-column: 6 / 8;
-  top: f.pxToRem(60);
+  height: f.pxToRem(140);
   position: relative;
+  text-align: center;
+  z-index: 1;
+  grid-area: 1 / 1;
+  align-self: end; 
+  padding-bottom: f.pxToRem(20); /* 下部に少し余白を追加 */
+
 
   span {
-    color: #fff;
     font-size: f.pxToRem(16);
     font-weight: v.$font-bold;
   }
@@ -77,34 +69,56 @@ fv
   &::after {
     content: "";
     position: absolute;
-    background: #fff;
-    width: 2px;
-    top: 25px;
-    left: 25px;
-    animation: pathmove 1.4s ease-in-out infinite;
+    background: v.$color-font;
+    width: f.pxToRem(2);
+    top: f.pxToRem(25);
+    left: 50%;
+    animation: pathmove 2s ease-in-out infinite;
     opacity: 0;
 
     @include m.mq("sp") {
-      height: 52px;
+      height: f.pxToRem(52);
     }
 
     @keyframes pathmove {
       0% {
         height: 0;
-        top: 20px;
+        top: f.pxToRem(20);
         opacity: 0;
       }
       30% {
-        height: 60px;
+        height: f.pxToRem(60);
         opacity: 1;
       }
       100% {
         height: 0;
-        top: 130px;
+        top: f.pxToRem(130);
         opacity: 0;
       }
     }
   }
+}
+
+.typing-animation {
+  
+	width: 16ch;	/*文字の長さ*/
+	border-right: 5px solid v.$color-font;	/*点滅バー*/
+	overflow: hidden;	/*必須*/
+	white-space: nowrap;	/*必須*/
+	
+	line-height:1.4;
+	font-weight:700;
+	animation: typing 1.5s steps(18), blink .4s step-end infinite alternate;	
+}
+@keyframes typing {
+	from {
+		width: 0;
+	}
+}
+@keyframes blink {
+	50% {
+		border-color: transparent;		/*点滅風に見せる*/
+	}
 }
 
 /* ===============================================

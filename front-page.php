@@ -1,16 +1,13 @@
 <?php get_header(); ?>
 <div class="p-fv">
+  <div class="p-fv__img"> <img src="<?php echo get_template_directory_uri( ) ?>/img/fv.png" alt="ファーストビュー" /></div>
   <div class="p-fv__content wow fadeIn">
-    <h1 class="p-fv__copy">Webの力で想いを繋ぐ</h1>
-    <p>Hiramaru Portforio.</p>
+    <h1 class="p-fv__copy typing-animation">Megumi's Portforio.</h1>
+    <p>コードで形にする、広がるWebの可能性。</p>
   </div>
   <div class="p-fv__scroll">
     <span>scrool</span>
   </div>
-  <picture class="p-fv__img">
-    <source media="(min-width: 768px)" srcset="<?php echo get_template_directory_uri( ) ?>/img/fv.png" />
-    <img src="<?php echo get_template_directory_uri( ) ?>/img/fv-sp.png" alt="ファーストビュー" />
-  </picture>
 </div>
 
 <section class="l-about l-section">
@@ -28,8 +25,8 @@
           Webサイトのコーディングをしています。<br><br>前職は5年ほど総合病院で勤務をしており、臨床検査技師として患者さんや現場スタッフとのコミュニケーションを大切にしながら仕事をしていました。<br><br>
           製作を通してよりよい成果を達成できるよう、チームの中で強みを活かして協力し、コーダー視点での提案ができるエンジニアを目指します。
         </p>
-        <button class="c-more__button">
-          <a href="#" class="c-button__link">もっとみる</a>
+        <button class="p-more__button">
+          <a href="<?php echo esc_url(home_url('/')); ?>about/" class="c-button__link">詳しく見る</a>
         </button>
       </div>
     </div>
@@ -40,35 +37,47 @@
   <div class="l-works__inner l-inner">
     <h2 class="c-section__title wow fadeInUp">制作実績</h2>
     <div class="p-works__container l-section__container">
+      <?php
+      $args = array(
+        'post_type' => 'works', 
+        'posts_per_page' => 3, 
+        'tax_query' => array(
+          array(
+            'taxonomy' => 'item_tag', 
+              
+            'terms'    => 'pickup', 
+          ),
+        ),
+      );
+      $pickup_query = new WP_Query($args);
+      if ($pickup_query->have_posts()) :
+        while ($pickup_query->have_posts()) : $pickup_query->the_post();
+      ?>
       <article class="p-works__item wow fadeInUp">
-        <a class="p-works__link" href="works01/">
+        <a class="p-works__link" href="<?php the_permalink(); ?>">
           <div class="p-item__content">
-            <img src="<?php echo get_template_directory_uri( ) ?>/img/hiramaru-nouen.png" alt="架空の農園サイト" width="314"
-              height="180" />
+            <?php if (has_post_thumbnail()) : ?>
+            <?php the_post_thumbnail('medium', array('width' => 314, 'height' => 180, 'alt' => get_the_title())); ?>
+            <?php else : ?>
+            <img src="<?php echo get_template_directory_uri(); ?>/img/default-image.png" alt="<?php the_title(); ?>"
+              width="314" height="180" />
+            <?php endif; ?>
             <div class="p-item__mask">
               <p class="p-item__mask-text">もっとみる</p>
             </div>
           </div>
         </a>
-        <p class="p-works__siteTitle">ひらまる農園 / 架空の静的サイト</p>
+        <p class="p-works__siteTitle"><?php the_title(); ?></p>
       </article>
-      <article class="p-works__item wow fadeInUp">
-        <a class="p-works__link" href="works02/">
-          <div class="p-item__content">
-            <img src="<?php echo get_template_directory_uri( ) ?>/img/aobotan-koumuten.png" alt="架空の工務店サイト" width="314"
-              height="180" />
-            <div class="p-item__mask">
-              <p class="p-item__mask-text">もっとみる</p>
-            </div>
-          </div>
-        </a>
-        <p class="p-works__siteTitle">青牡丹工務店 / 架空の静的サイト</p>
-      </article>
+      <?php
+        endwhile;
+        wp_reset_postdata(); 
+        endif;
+      ?>
     </div>
-    <button class="c-more__button p-works__button">
-      <a href="#" class="c-button__link">もっとみる</a>
+    <button class="p-more__button p-works__button">
+      <a href="<?php echo esc_url(home_url('/')); ?>works/" class="c-button__link">実績一覧へ</a>
     </button>
   </div>
 </section>
-
 <?php get_footer(); ?>

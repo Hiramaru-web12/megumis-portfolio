@@ -8,7 +8,6 @@ header
 =============================================== */
 .l-header {
   padding: f.pxToRem(10) f.pxToRem(16);
-  background: #fff;
   position: fixed;
   top: 0;
   right: 0;
@@ -92,6 +91,9 @@ header
     padding: 0 f.pxToRem(16);
   }
 }
+.l-about {
+  padding-top: f.pxToRem(120);
+} 
 
 .l-about__inner{
   padding: 0 f.pxToRem(30);
