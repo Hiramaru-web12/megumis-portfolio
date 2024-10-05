@@ -12,10 +12,7 @@
 
 <!-- jquery & iScroll -->
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-<!-- wow.js -->
-<script>
-new WOW().init();
-</script>
+
 <!-- original -->
 <?php wp_footer(); ?>
 </body>

@@ -26,11 +26,11 @@
         <p class="p-about__desc">
           ご覧いただきありがとうございます。<br>
           Webサイトのコーディングをしています。<br><br>前職は5年ほど総合病院で勤務をしており、臨床検査技師として患者さんや現場スタッフとのコミュニケーションを大切にしながら仕事をしていました。<br><br>
-          製作を通してよりよい成果を達成できるよう、チームの中で強みを活かして協力し、コーダー視点での提案ができるエンジニアを目指します。
+          製作を通してよりよい成果を達成できるよう、チームの中で強みを活かし、コーダー視点での提案ができるエンジニアを目指します。
         </p>
-        <button class="p-more__button">
-          <a href="<?php echo esc_url(home_url('/')); ?>about/" class="c-button__link">詳しく見る</a>
-        </button>
+        <div class="p-more__button">
+          <a href="<?php echo esc_url(home_url('/')); ?>about/" class="c-button__link">もっとみる</a>
+        </div>
       </div>
     </div>
   </div>
@@ -79,9 +79,9 @@
         endif;
       ?>
     </div>
-    <button class="p-more__button p-works__button">
+    <div class="p-more__button p-works__button">
       <a href="<?php echo esc_url(home_url('/')); ?>works/" class="c-button__link">実績一覧へ</a>
-    </button>
+    </div>
   </div>
 </section>
 <?php get_footer(); ?>

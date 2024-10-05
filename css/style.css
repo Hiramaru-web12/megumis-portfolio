@@ -45,14 +45,14 @@ mixin
   block-size: 100%;
   block-size: 100dvb;
   line-height: 1.5;
-  font-family: "Zenkaku Gothic New", sans-serif;
+  font-family: "Noto Sans JP", sans-serif;
   -webkit-font-smoothing: antialiased;
   margin: 0;
   padding: 0;
   font-weight: 400;
   font-style: normal;
   font-size: 1rem;
-  color: #3E3E3E;
+  color: #434343;
   margin: 0 0 0 auto;
   background: #F7F7F9;
 }
@@ -86,11 +86,11 @@ mixin
   outline: none;
   padding: 0;
   appearance: none;
-  font-family: "Zenkaku Gothic New", sans-serif;
+  font-family: "Noto Sans JP", sans-serif;
   font-size: 1rem;
   -webkit-appearance: none;
   -moz-appearance: none;
-  color: #3E3E3E;
+  color: #434343;
   background: transparent;
 }
 
@@ -310,7 +310,7 @@ drawer
       -ms-flex-align: center;
           align-items: center;
   background: #fff;
-  margin-top: 10rem;
+  margin-top: 6.25rem;
 }
 
 .p-header {
@@ -347,7 +347,7 @@ drawer
   height: 0.0625rem;
   bottom: -6px;
   left: 50%;
-  background: #FFC67C;
+  background: #f2a745;
   -webkit-transform: translateX(-50%) scale(0, 1);
           transform: translateX(-50%) scale(0, 1);
   -webkit-transition: 0.3s ease-out;
@@ -355,7 +355,7 @@ drawer
   cursor: pointer;
 }
 .p-header__nav li a:hover, .p-header__nav li a.current {
-  color: #FFC67C;
+  color: #f2a745;
 }
 .p-header__nav li a:hover::after, .p-header__nav li a.current::after {
   -webkit-transform: translateX(-50%) scale(1, 1);
@@ -386,7 +386,7 @@ drawer
   padding: 0.625rem 0;
 }
 .p-drawer__nav li:not(:last-child) {
-  border-bottom: 1px solid #3E3E3E;
+  border-bottom: 1px solid #434343;
 }
 .p-drawer__nav li a {
   padding: 1em 0;
@@ -403,19 +403,6 @@ drawer
   width: 100%;
   position: absolute;
   bottom: 0;
-}
-
-/* ===============================================
-ロゴ
-=============================================== */
-.c-header__logo {
-  display: block;
-  margin: auto 0;
-}
-@media screen and ( max-width: 767px ) {
-  .c-header__logo {
-    width: 3.125rem;
-  }
 }
 
 /* ===============================================
@@ -447,7 +434,7 @@ drawer
 .c-drawer__icon.is-active span:nth-of-type(1) {
   -webkit-transform: translateY(10px) rotate(-45deg);
           transform: translateY(10px) rotate(-45deg);
-  background: #3E3E3E;
+  background: #434343;
 }
 .c-drawer__icon.is-active span:nth-of-type(2) {
   opacity: 0;
@@ -455,7 +442,7 @@ drawer
 .c-drawer__icon.is-active span:nth-of-type(3) {
   -webkit-transform: translateY(-10px) rotate(45deg);
           transform: translateY(-10px) rotate(45deg);
-  background: #3E3E3E;
+  background: #434343;
 }
 
 .c-drawer__bars span {
@@ -465,7 +452,7 @@ drawer
   position: absolute;
   left: 0.6875rem;
   height: 2px;
-  background: #3E3E3E;
+  background: #434343;
   width: 1.75rem;
 }
 .c-drawer__bars span:nth-of-type(1) {
@@ -482,16 +469,16 @@ drawer
 セクションタイトルの装飾
 =============================================== */
 .c-section__title {
-  color: #3E3E3E;
+  color: #434343;
   font-size: clamp(1.5rem, 1.324rem + 0.75vw, 2rem);
-  font-weight: 400;
+  font-weight: 700;
   text-align: center;
   letter-spacing: 2px;
 }
 .c-section__title::after {
   content: "";
   display: block;
-  background: #FFC67C;
+  background: #f2a745;
   height: 0.125rem;
   width: 5.25rem;
   margin: 16px auto 0;
@@ -506,10 +493,10 @@ drawer
   padding: 1em 2em;
   width: 14.5rem;
   text-align: center;
-  -webkit-box-shadow: 6px 6px #FFC67C;
-          box-shadow: 6px 6px #FFC67C;
-  border: 1px solid #3E3E3E;
-  color: #3E3E3E;
+  -webkit-box-shadow: 6px 6px #f2a745;
+          box-shadow: 6px 6px #f2a745;
+  border: 1px solid #434343;
+  color: #434343;
   position: relative;
   cursor: pointer;
   -webkit-transition: -webkit-transform 0.3s;
@@ -523,14 +510,14 @@ drawer
   display: inline-block;
   width: 50px;
   height: 1px;
-  background: #3E3E3E;
+  background: #434343;
   top: 48%;
   right: -25px;
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
 }
 .c-button__link:hover {
-  background: #FFC67C;
+  background: #f2a745;
   color: #fff;
   -webkit-box-shadow: unset;
           box-shadow: unset;
@@ -558,6 +545,24 @@ drawer
 }
 
 /* ===============================================
+ロゴ
+=============================================== */
+.p-header__logo {
+  display: block;
+  margin: auto 0;
+}
+.p-header__logo p {
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: 0.025rem;
+}
+@media screen and ( max-width: 767px ) {
+  .p-header__logo {
+    width: 3.125rem;
+  }
+}
+
+/* ===============================================
 パンくずリスト
 =============================================== */
 .p-breadcrub {
@@ -581,8 +586,8 @@ fv
 }
 
 .p-fv__img {
-  -webkit-filter: opacity(50%);
-          filter: opacity(50%);
+  -webkit-filter: opacity(40%);
+          filter: opacity(40%);
   grid-area: 1/-1;
 }
 @media screen and ( max-width: 767px ) {
@@ -616,7 +621,7 @@ fv
 }
 .p-fv__content > h1 {
   font-size: clamp(1.75rem, 1.134rem + 2.63vw, 3.5rem);
-  line-height: 1.2;
+  line-height: 1.4;
 }
 .p-fv__content > p {
   font-size: clamp(1rem, 0.912rem + 0.38vw, 1.25rem);
@@ -644,7 +649,7 @@ fv
 .p-fv__scroll::after {
   content: "";
   position: absolute;
-  background: #3E3E3E;
+  background: #434343;
   width: 0.125rem;
   top: 1.5625rem;
   left: 50%;
@@ -692,7 +697,7 @@ fv
 
 .typing-animation {
   width: 16ch; /*文字の長さ*/
-  border-right: 5px solid #3E3E3E; /*点滅バー*/
+  border-right: 5px solid #434343; /*点滅バー*/
   overflow: hidden; /*必須*/
   white-space: nowrap; /*必須*/
   line-height: 1.4;
@@ -802,8 +807,16 @@ works
 
 .p-works__container {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 2.25rem;
+  grid-template-columns: repeat(3, 1fr);
+  -webkit-column-gap: 1.5rem;
+     -moz-column-gap: 1.5rem;
+          column-gap: 1.5rem;
+  row-gap: 2.25rem;
+}
+@media screen and ( min-width: 768px ) and ( max-width: 999px ) {
+  .p-works__container {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 @media screen and ( max-width: 767px ) {
   .p-works__container {
@@ -812,13 +825,16 @@ works
 }
 
 .p-works__siteTitle {
-  margin-top: 1rem;
+  margin-top: 1.125rem;
+  font-weight: 700;
+  font-size: 0.875rem;
 }
 
 .p-works__link {
   display: block;
   -webkit-box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
 }
 .p-works__link:hover {
   opacity: 1;
@@ -827,16 +843,18 @@ works
 .p-item__content {
   position: relative;
   overflow: hidden;
-}
-
-.p-item__content {
-  position: relative;
-  overflow: hidden;
+  -webkit-transition: 0.3s ease-out;
+  transition: 0.3s ease-out;
 }
 .p-item__content > img {
   width: 100%;
   height: auto;
   vertical-align: top;
+}
+@media screen and ( min-width: 1000px ) {
+  .p-item__content:hover {
+    scale: 1.1;
+  }
 }
 
 .p-item__mask {
@@ -855,7 +873,7 @@ works
   padding: 0.5em;
   color: #fff;
   text-align: center;
-  top: 45%;
+  top: 40%;
   left: 50%;
   -webkit-transform: translate(-50%);
           transform: translate(-50%);
@@ -868,15 +886,17 @@ works
   -webkit-transition: opacity 0.5s ease;
   transition: opacity 0.5s ease;
 }
-.p-works__item:hover,
-.p-works__link:hover,
-.p-item__mask:hover {
-  opacity: 1;
+@media screen and ( min-width: 1000px ) {
+  .p-works__item:hover,
+  .p-works__link:hover,
+  .p-item__mask:hover {
+    opacity: 1;
+  }
 }
 
 .p-works__button {
-  display: block;
-  margin: 5rem auto 0;
+  margin-top: 3.75rem;
+  text-align: center;
 }
 
 /* ===============================================
@@ -994,8 +1014,8 @@ works
   transition: 0.5s ease-out;
 }
 .page-numbers:hover {
-  background: #3E3E3E;
-  border: 1px solid #3E3E3E;
+  background: #434343;
+  border: 1px solid #434343;
   color: #fff;
 }
 .page-numbers a {
@@ -1008,8 +1028,8 @@ works
   color: #fff;
 }
 .page-numbers.prev:hover, .page-numbers.next:hover {
-  background: #3E3E3E;
-  border: 1px solid #3E3E3E;
+  background: #434343;
+  border: 1px solid #434343;
 }
 .page-numbers.prev {
   position: relative;
@@ -1048,7 +1068,7 @@ works
   font-weight: 700;
   font-size: clamp(1rem, 0.912rem + 0.38vw, 1.25rem);
   padding-bottom: 0.75rem;
-  border-bottom: 2px solid #FFC67C;
+  border-bottom: 2px solid #f2a745;
 }
 
 .p-works-detal__img {
@@ -1148,8 +1168,8 @@ dl dd a {
   color: #fff;
 }
 .p-article__link li.prev:hover, .p-article__link li.next:hover {
-  background: #3E3E3E;
-  border: 1px solid #3E3E3E;
+  background: #434343;
+  border: 1px solid #434343;
 }
 .p-article__link li.prev {
   position: absolute;
@@ -1206,6 +1226,6 @@ dl dd a {
 }
 .p-article__link li.to-archive:hover {
   color: #fff;
-  background: #3E3E3E;
-  border: 1px solid #3E3E3E;
+  background: #434343;
+  border: 1px solid #434343;
 }
