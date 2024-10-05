@@ -21,7 +21,7 @@
             マルチタスクが強いられるなか、状況を見ながら協力して業務ができるようコミュニケーションをとってきました。</p><br>
           <p class="p-lower-about__title">WEB製作を始めたきっかけ :</p>
           <p class="p-lower-about__desc">
-            幼少期から絵を描くことや工作が好きで、作ったもので喜んでもらえる仕事を探していました。<br>パソコンがあれば製作ができるプログラミングに興味があったこと、Webデザイナーという仕事をたまたま見つけたことからコーディングの勉強を始め、現在に至ります。
+            幼少期から絵を描くことや工作が好きで、作ったもので喜んでもらえる仕事を探していました。<br>パソコンがあれば製作ができるプログラミングに興味があったことからコーディングの勉強を始め、現在に至ります。
           </p>
         </div>
       </div>
@@ -58,7 +58,7 @@
         <li class="p-skill__card">
           <img src="<?php echo get_template_directory_uri( ) ?>/img/skill-4.png" alt="wordpress">
           <p class="p-skill__name">WordPress</p>
-          <p class="p-skill__desc">既存のサイトをWordPress化し、カスタム投稿やカスタムフィールドの追加が可能です。</p>
+          <p class="p-skill__desc">静的サイトをWordPress化し、カスタム投稿やカスタムフィールドの追加が可能です。</p>
         </li>
       </ul>
     </div>
