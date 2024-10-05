@@ -4,6 +4,23 @@
 @use 'function' as f;
 
 
+/* ===============================================
+ロゴ
+=============================================== */
+.p-header__logo {
+  display: block;
+  margin: auto 0;
+
+  p {
+    font-size: f.pxToRem(20);
+    font-weight: v.$font-bold;
+    letter-spacing: f.pxToRem(0.4);
+  }
+  
+  @include m.mq('sp') {
+    width: f.pxToRem(50);
+  }
+}
 
 /* ===============================================
 パンくずリスト

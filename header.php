@@ -11,12 +11,9 @@
   <meta name="viewport" content="width=device-width, initiap-scale=1.0" />
   <meta name="robots" content="noindex , nofollow" />
   <link rel="shortcut icon" href="<?php echo get_template_directory_uri( ) ?>/img/favicon.ico" />
-  <!-- google font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;700&display=swap" rel="stylesheet">
-  <!-- animate -->
-  <link rel="stylesheet" href="../css/animate.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
   <!-- original -->
   <?php wp_head(); ?>
 </head>
@@ -25,9 +22,9 @@
   <!-- header -->
   <header id="js-header" class="l-header p-header">
     <div class="l-header__inner">
-      <div class="c-header__logo">
+      <div class="p-header__logo">
         <a href="<?php echo esc_url(home_url('/')); ?>">
-          <img src="<?php echo get_template_directory_uri( ) ?>/img/logo.png" alt="ロゴ" width="70" height="70" />
+          <p>Megumi`s Portfolio.</p>
         </a>
       </div>
       <button class="c-drawer__icon">
@@ -57,7 +54,7 @@
         </div>
         <div class="p-drawer__copyright">
           <p class="c-copyright">
-            <small lang="en">Mebumi`s Portfolio.</small>
+            <small lang="en">Megumi`s Portfolio.</small>
           </p>
         </div>
       </div>

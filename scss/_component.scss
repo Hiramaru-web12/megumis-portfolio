@@ -4,18 +4,6 @@
 @use 'function' as f;
 
 /* ===============================================
-ロゴ
-=============================================== */
-.c-header__logo {
-  display: block;
-  margin: auto 0;
-  
-  @include m.mq('sp') {
-    width: f.pxToRem(50);
-  }
-}
-
-/* ===============================================
 drawer
 =============================================== */
 .c-drawer__icon {
@@ -84,7 +72,7 @@ drawer
 .c-section__title {
   color: v.$color-font;
   font-size: clamp(1.5rem, 1.324rem + 0.75vw, 2rem);
-  font-weight: 400;
+  font-weight: v.$font-bold;
   text-align: center;
   letter-spacing: 2px;
 
