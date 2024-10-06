@@ -18,7 +18,7 @@
     <h2 class="c-section__title wow fadeInUp">私について</h2>
     <div class="p-about__container l-section__container">
       <div class="p-about__img wow fadeInLeft delay-2s">
-        <img src="<?php echo get_template_directory_uri( ) ?>/img/my-icon.png" alt="プロフィール画像" height="380"
+        <img src="<?php echo get_template_directory_uri( ) ?>/img/my-picture.png" alt="プロフィール画像" height="380"
           width="380" />
       </div>
       <div class="p-about__text wow fadeInRight delay-2s">
