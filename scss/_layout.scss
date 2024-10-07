@@ -7,13 +7,12 @@
 header
 =============================================== */
 .l-header {
-  padding: f.pxToRem(10) f.pxToRem(16);
+  padding: f.pxToRem(16);
   position: fixed;
   top: 0;
   right: 0;
   left: 0;
   width: 100%;
-  height: f.pxToRem(84);
   z-index:2;
  
   @include m.mq('sp'){
