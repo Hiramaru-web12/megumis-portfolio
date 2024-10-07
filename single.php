@@ -35,7 +35,7 @@
         <?php if( get_field('overview') ) : ?>
         <div class="p-works-detal__item">
           <dt>概要</dt>
-          <dd><?php the_field('overview'); ?></dd>
+          <dd><?php echo nl2br(get_field('overview')); ?></dd>
         </div>
         <?php endif; ?>
         <?php if( get_field('skill') ) : ?>
