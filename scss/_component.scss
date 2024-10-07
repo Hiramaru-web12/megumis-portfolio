@@ -29,14 +29,14 @@ drawer
     &.is-active{
       span {
         &:nth-of-type(1){
-          transform: translateY(10px)rotate(-45deg);
+          transform: translateY(10px)rotate(-160deg);
           background: v.$color-font;
           }
           &:nth-of-type(2) {
             opacity: 0;
           }
           &:nth-of-type(3) {
-            transform: translateY(-10px) rotate(45deg);
+            transform: translateY(-10px) rotate(160deg);
             background: v.$color-font;
           }
         }
