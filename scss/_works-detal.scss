@@ -86,6 +86,7 @@ dl {
     a {
       display: block;
       padding: f.pxToRem(10);
+      vertical-align: middle;
     }
     
     &.prev,
@@ -104,8 +105,8 @@ dl {
       position: absolute;
       right: calc(50% + 65px);
       transition: 0.3s ease-out;
+      padding-left: f.pxToRem(14);
 
-      
       @include m.mq('sp'){
         right: calc(50% + 50px);
       } 
@@ -115,8 +116,10 @@ dl {
         display: inline-block;
         right: f.pxToRem(102);
         content: url("../img/arrow-icon-left.png");
-        top: 55%;
+        top: 50%;
         transform: translateY(-50%);
+        width: f.pxToRem(16);
+        height: f.pxToRem(14);
         pointer-events: none;
       }
     }
@@ -125,6 +128,7 @@ dl {
       position: absolute;
       left: calc(50% + 65px);
       transition: 0.3s ease-out;
+      padding-right: f.pxToRem(14);
 
       @include m.mq('sp'){
         left: calc(50% + 50px);
@@ -132,12 +136,13 @@ dl {
       
       &::after {
         position: absolute;
-        display: block;
-        line-height: f.pxToRem(24); 
+        display: inline-block;
         left: f.pxToRem(102);
         content: url("../img/arrow-icon-right.png");
-        top: 55%;
+        top: 50%;
         transform: translateY(-50%);
+        width: f.pxToRem(16);
+        height: f.pxToRem(14);
         pointer-events: none;
       }
     }

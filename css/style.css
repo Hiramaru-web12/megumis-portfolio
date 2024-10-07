@@ -1173,6 +1173,7 @@ dl dd a {
 .p-article__link li a {
   display: block;
   padding: 0.625rem;
+  vertical-align: middle;
 }
 .p-article__link li.prev, .p-article__link li.next {
   width: 7.75rem;
@@ -1188,6 +1189,7 @@ dl dd a {
   right: calc(50% + 65px);
   -webkit-transition: 0.3s ease-out;
   transition: 0.3s ease-out;
+  padding-left: 0.875rem;
 }
 @media screen and ( max-width: 767px ) {
   .p-article__link li.prev {
@@ -1199,9 +1201,11 @@ dl dd a {
   display: inline-block;
   right: 6.375rem;
   content: url("../img/arrow-icon-left.png");
-  top: 55%;
+  top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
+  width: 1rem;
+  height: 0.875rem;
   pointer-events: none;
 }
 .p-article__link li.next {
@@ -1209,6 +1213,7 @@ dl dd a {
   left: calc(50% + 65px);
   -webkit-transition: 0.3s ease-out;
   transition: 0.3s ease-out;
+  padding-right: 0.875rem;
 }
 @media screen and ( max-width: 767px ) {
   .p-article__link li.next {
@@ -1217,13 +1222,14 @@ dl dd a {
 }
 .p-article__link li.next::after {
   position: absolute;
-  display: block;
-  line-height: 1.5rem;
+  display: inline-block;
   left: 6.375rem;
   content: url("../img/arrow-icon-right.png");
-  top: 55%;
+  top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
+  width: 1rem;
+  height: 0.875rem;
   pointer-events: none;
 }
 .p-article__link li.to-archive {
