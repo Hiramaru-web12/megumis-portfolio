@@ -133,7 +133,6 @@ about
     justify-content: center;
     place-items: center;
   }
-
 }
 
 .p-about__img {
@@ -142,8 +141,6 @@ about
 }
 
 .p-about__text {
-  display: flex;
-  flex-flow: column wrap;
   width: min(100%,(f.pxToRem(480)));
   gap: f.pxToRem(40);
   line-height: 180%;
@@ -163,10 +160,16 @@ about
 
 .p-about__desc {
  letter-spacing: 1px;
+ margin-top: f.pxToRem(40);
 
  @include m.mq('sp'){
   font-size: f.pxToRem(14);
  } 
+}
+
+.p-more__button {
+  margin-top: f.pxToRem(60);
+  text-align: center;
 }
 
   /* ===============================================
@@ -257,9 +260,4 @@ about
         opacity: 1;
       }
     } 
-  }
-
-  .p-works__button {
-    margin-top: f.pxToRem(60);
-    text-align: center;
   }
