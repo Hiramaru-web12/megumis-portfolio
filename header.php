@@ -41,13 +41,32 @@
             <li><a href="<?php echo esc_url(home_url('/')); ?>about/">私について</a>
             </li>
             <li><a href="<?php echo esc_url(home_url('/')); ?>works/">制作実績</a></li>
+
             <li>
-              <a href="https://x.com/hrmr_crt96">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="50px" height="50px">
-                  <path
-                    d="M 11 4 C 7.134 4 4 7.134 4 11 L 4 39 C 4 42.866 7.134 46 11 46 L 39 46 C 42.866 46 46 42.866 46 39 L 46 11 C 46 7.134 42.866 4 39 4 L 11 4 z M 13.085938 13 L 21.023438 13 L 26.660156 21.009766 L 33.5 13 L 36 13 L 27.789062 22.613281 L 37.914062 37 L 29.978516 37 L 23.4375 27.707031 L 15.5 37 L 13 37 L 22.308594 26.103516 L 13.085938 13 z M 16.914062 15 L 31.021484 35 L 34.085938 35 L 19.978516 15 L 16.914062 15 z" />
-                </svg>
-              </a>
+              <a href="https://x.com/hrmr_crt96"><svg width="36" height="36" viewBox="0 0 36 36" fill="none"
+                  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <rect width="36" height="36" fill="url(#pattern0_369_100)" fill-opacity="0.7" />
+                  <defs>
+                    <pattern id="pattern0_369_100" patternContentUnits="objectBoundingBox" width="1" height="1">
+                      <use xlink:href="#image0_369_100" transform="scale(0.02)" />
+                    </pattern>
+                    <image id="image0_369_100" width="50" height="50"
+                      xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAC+klEQVR4nO2ZSWhUQRCGP424K24J7oiCOyoeBAUVPAQEEQlxuehBD4ogBD3pyZjcNOjJmwt6EEXwIgriRUGiYkxEQVDcUC+iMZt7kpaCP9CMSd6bl2ReT5wfipmp6aqpf17339XvQQEFFNAXlADVQD3QBrgcWxvwGKhSLYmwFWhJoXjXg1kt5UlIdAZQvMuwzmzIlAR2JVyGNQPFcYhUB1Csi7BjcYg0BFCoizATgEi0BlCoizCb+pFweWKR+K+IVETkOJdFQV+A+Yo7kGsiP4FlveQYC7yIkec3sEExG4E/aUytZ8BIYAhww/NvV541QHvE5rZLY5cATWmukeOKmQ58lu8rMFv+qhh7wTTgXVprxMk6vKmxxfPfAYYCw4D73cRd0ZUcBTxIQML1NxGzD8AkxZ71/Aflm5exNz0ERovotYQk3EAQMbuq2DHeIjdBWC7/PvneeO14TR9IuIEiYrZT8as99XkqQTBcABbp/d4+knADScRUZ45yHPX8JzPyl2Ypsy7XRMzuAkVa5LWezFrxhvEJZNalQcTssPLM9c41H4HJ8p/OFyJ/gFXKtcfzm0IhxXqeD0ScCrWCDZc9/275VgK/8oHIW09mp2hqOe0ntq8YjoROpBlYqlwT9Vrq3cyolRgUSRyCJNIObFKedcB7YKo+n/LGmTwbZgGNIRLZrxwLvQJvqq8aATzxBME2TtQBB0WkRvEmsy8zvrOdvKtd/yHfK2Cc/JdCIXJdc97akXvdfP8NWKD8hzz/GfkmJGjlI5EtiTo1izZ9LvYy7hEwXF3vbc+/zVtTHWkRMVmdGeMQ1WU2xjDDO4g1atEbTqRBxPaEFYrZEfNesf3j6xVT5vlveYLQkEsiJrObNX6tzh5x/4DXah57wmLge66I2G2brsbwU4J1dT6ihopcr5E0LRKDhkhLAEW6GP1cJOoDKNT1x2OFOPtB2lY5GB69NemMEwvlAT8MLYtLwifTHNiVKCMhinWzuS6lR3Kt+u3KbKZTAQUUwD/4C68XAvRNax0sAAAAAElFTkSuQmCC" />
+                  </defs>
+                </svg></a>
+            </li>
+            <li>
+              <a href="https://github.com/Hiramaru-web12"><svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <rect width="30" height="30" fill="url(#pattern0_369_169)" fill-opacity="0.7" />
+                  <defs>
+                    <pattern id="pattern0_369_169" patternContentUnits="objectBoundingBox" width="1" height="1">
+                      <use xlink:href="#image0_369_169" transform="scale(0.0208333)" />
+                    </pattern>
+                    <image id="image0_369_169" width="48" height="48"
+                      xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAADTElEQVR4nNWZSWgVQRCGP3dxwQU1UaIYIohCPIgeBBUxICghh+TiRU+SiEoQcUtQBEEjQRQ8iAmCInqIiLm4HIKglyBGIcQNxIMo0YMmasDELY5U7AfD8Lqnp2fGzPuh4PHmddX/93RXV9eDf1gI3AAGAC/jNgC0A0vxke/LADEvovUr7iMz7xWoXadAlo2nsa9kgIQX00adgJdFAbLBuoFOZfL5c5YF9AEXgGqgCD2KgRqgJcHMR5zBz4BtwESiQ8ZsB16MhgDZ/XuAccTHeKA+RjaMPKALKCN5LAGepC3gFjCF9DAVuJ2WgA5gEuljAnAnaQE9Kc98ENOA50kJGPRXfj6cAd4ArcAqomMdcBl4BxzJ83w5MJSEgAYNgVe+3/wBrgErgSrgmMr1Umy1qTNCSFYCq4GbgRidmhhH4wp4D0zWOP/ukDF09lYTQ2L3xhGwz7AEviQo4LUhzn5XAT+AOQbH9xMU0G6IMw/46SLgrsHpmhCnUe0bUG6I1+Ei4IDBYVeC5D1lQlKHwy4CKjTOVqRA3lO2SBNzk4sAnbMdKQqo0cRc7CJATsN8OJiigDpNzOkuAqTMzYe6FAVsNdRHkQVI+sqH6hQFbNTELHIRILVIPixQpUPS5H8BMzQxy10EbEEPl4tHmN0zxKt0EdBkcFiVgoD1hnjNLgIeYkZLguSbQmI9chHwGyg1OB0LHI9ZUgyqYs0EuX8PuwgQO+1zJFnpElCr0po/QHOE9siwanSJ+BLCcTbEn/GhdNNm+pztVjP+QHM/ngVcNfhrNRyQ+TDbomwPnTFZ637Uqu/llhXEfLX0dL6GQkr0IC5a8LN65XJ/zWEM8Fg9O6/ahag3dcrCnxyENthged5Yrdve3L8hCpvz1PO2G3eXBflS4IOlP+vAPYGTcq+6tXkRTVqSYev+ZQR/kYJ3B8rsEjWjJ4BGdTUM8yGJQIeyCP0gJwGeerVrNQQaYyyhCuCjA5/IAzy1ua4AcwMkGizG7gyMKVa+XAtEp0E561OZJ3din7QYc0j9dhlwTrXq43CINTh4utpsammIPU2wJMcrcKPgBQxkgITnaFInWeXurFobqvffnwEyXkT75C/Hpc6RXn7clPY/TDjKzI+Q/wvKRsoJ531g0wAAAABJRU5ErkJggg==" />
+                  </defs>
+                </svg></a>
             </li>
           </ul>
           </nav>
@@ -70,11 +89,35 @@
             <?php if(is_post_type_archive('works') || is_singular('works') ) echo ' class="current"'; ?>>制作実績</a>
         </li>
         <li>
-          <a href="https://x.com/hrmr_crt96"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="50px"
-              height="50px">
-              <path
-                d="M 11 4 C 7.134 4 4 7.134 4 11 L 4 39 C 4 42.866 7.134 46 11 46 L 39 46 C 42.866 46 46 42.866 46 39 L 46 11 C 46 7.134 42.866 4 39 4 L 11 4 z M 13.085938 13 L 21.023438 13 L 26.660156 21.009766 L 33.5 13 L 36 13 L 27.789062 22.613281 L 37.914062 37 L 29.978516 37 L 23.4375 27.707031 L 15.5 37 L 13 37 L 22.308594 26.103516 L 13.085938 13 z M 16.914062 15 L 31.021484 35 L 34.085938 35 L 19.978516 15 L 16.914062 15 z" />
+          <a href="https://x.com/hrmr_crt96">
+            <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink">
+              <rect width="36" height="36" fill="url(#pattern0_369_67)" fill-opacity="0.7" />
+              <defs>
+                <pattern id="pattern0_369_67" patternContentUnits="objectBoundingBox" width="1" height="1">
+                  <use xlink:href="#image0_369_67" transform="scale(0.02)" />
+                </pattern>
+                <image id="image0_369_67" width="50" height="50"
+                  xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAC+klEQVR4nO2ZSWhUQRCGP424K24J7oiCOyoeBAUVPAQEEQlxuehBD4ogBD3pyZjcNOjJmwt6EEXwIgriRUGiYkxEQVDcUC+iMZt7kpaCP9CMSd6bl2ReT5wfipmp6aqpf17339XvQQEFFNAXlADVQD3QBrgcWxvwGKhSLYmwFWhJoXjXg1kt5UlIdAZQvMuwzmzIlAR2JVyGNQPFcYhUB1Csi7BjcYg0BFCoizATgEi0BlCoizCb+pFweWKR+K+IVETkOJdFQV+A+Yo7kGsiP4FlveQYC7yIkec3sEExG4E/aUytZ8BIYAhww/NvV541QHvE5rZLY5cATWmukeOKmQ58lu8rMFv+qhh7wTTgXVprxMk6vKmxxfPfAYYCw4D73cRd0ZUcBTxIQML1NxGzD8AkxZ71/Aflm5exNz0ERovotYQk3EAQMbuq2DHeIjdBWC7/PvneeO14TR9IuIEiYrZT8as99XkqQTBcABbp/d4+knADScRUZ45yHPX8JzPyl2Ypsy7XRMzuAkVa5LWezFrxhvEJZNalQcTssPLM9c41H4HJ8p/OFyJ/gFXKtcfzm0IhxXqeD0ScCrWCDZc9/275VgK/8oHIW09mp2hqOe0ntq8YjoROpBlYqlwT9Vrq3cyolRgUSRyCJNIObFKedcB7YKo+n/LGmTwbZgGNIRLZrxwLvQJvqq8aATzxBME2TtQBB0WkRvEmsy8zvrOdvKtd/yHfK2Cc/JdCIXJdc97akXvdfP8NWKD8hzz/GfkmJGjlI5EtiTo1izZ9LvYy7hEwXF3vbc+/zVtTHWkRMVmdGeMQ1WU2xjDDO4g1atEbTqRBxPaEFYrZEfNesf3j6xVT5vlveYLQkEsiJrObNX6tzh5x/4DXah57wmLge66I2G2brsbwU4J1dT6ihopcr5E0LRKDhkhLAEW6GP1cJOoDKNT1x2OFOPtB2lY5GB69NemMEwvlAT8MLYtLwifTHNiVKCMhinWzuS6lR3Kt+u3KbKZTAQUUwD/4C68XAvRNax0sAAAAAElFTkSuQmCC" />
+              </defs>
             </svg>
+
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/Hiramaru-web12">
+            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink">
+              <rect width="30" height="30" fill="url(#pattern0_365_50)" fill-opacity="0.7" />
+              <defs>
+                <pattern id="pattern0_365_50" patternContentUnits="objectBoundingBox" width="1" height="1">
+                  <use xlink:href="#image0_365_50" transform="scale(0.0208333)" />
+                </pattern>
+                <image id="image0_365_50" width="48" height="48"
+                  xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAADTElEQVR4nNWZSWgVQRCGP3dxwQU1UaIYIohCPIgeBBUxICghh+TiRU+SiEoQcUtQBEEjQRQ8iAmCInqIiLm4HIKglyBGIcQNxIMo0YMmasDELY5U7AfD8Lqnp2fGzPuh4PHmddX/93RXV9eDf1gI3AAGAC/jNgC0A0vxke/LADEvovUr7iMz7xWoXadAlo2nsa9kgIQX00adgJdFAbLBuoFOZfL5c5YF9AEXgGqgCD2KgRqgJcHMR5zBz4BtwESiQ8ZsB16MhgDZ/XuAccTHeKA+RjaMPKALKCN5LAGepC3gFjCF9DAVuJ2WgA5gEuljAnAnaQE9Kc98ENOA50kJGPRXfj6cAd4ArcAqomMdcBl4BxzJ83w5MJSEgAYNgVe+3/wBrgErgSrgmMr1Umy1qTNCSFYCq4GbgRidmhhH4wp4D0zWOP/ukDF09lYTQ2L3xhGwz7AEviQo4LUhzn5XAT+AOQbH9xMU0G6IMw/46SLgrsHpmhCnUe0bUG6I1+Ei4IDBYVeC5D1lQlKHwy4CKjTOVqRA3lO2SBNzk4sAnbMdKQqo0cRc7CJATsN8OJiigDpNzOkuAqTMzYe6FAVsNdRHkQVI+sqH6hQFbNTELHIRILVIPixQpUPS5H8BMzQxy10EbEEPl4tHmN0zxKt0EdBkcFiVgoD1hnjNLgIeYkZLguSbQmI9chHwGyg1OB0LHI9ZUgyqYs0EuX8PuwgQO+1zJFnpElCr0po/QHOE9siwanSJ+BLCcTbEn/GhdNNm+pztVjP+QHM/ngVcNfhrNRyQ+TDbomwPnTFZ637Uqu/llhXEfLX0dL6GQkr0IC5a8LN65XJ/zWEM8Fg9O6/ahag3dcrCnxyENthged5Yrdve3L8hCpvz1PO2G3eXBflS4IOlP+vAPYGTcq+6tXkRTVqSYev+ZQR/kYJ3B8rsEjWjJ4BGdTUM8yGJQIeyCP0gJwGeerVrNQQaYyyhCuCjA5/IAzy1ua4AcwMkGizG7gyMKVa+XAtEp0E561OZJ3din7QYc0j9dhlwTrXq43CINTh4utpsammIPU2wJMcrcKPgBQxkgITnaFInWeXurFobqvffnwEyXkT75C/Hpc6RXn7clPY/TDjKzI+Q/wvKRsoJ531g0wAAAABJRU5ErkJggg==" />
+              </defs>
+            </svg>
+
           </a>
         </li>
       </ul>
