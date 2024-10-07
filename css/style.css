@@ -556,11 +556,6 @@ drawer
   font-weight: 700;
   letter-spacing: 0.025rem;
 }
-@media screen and ( max-width: 767px ) {
-  .p-header__logo {
-    width: 3.125rem;
-  }
-}
 
 /* ===============================================
 パンくずリスト

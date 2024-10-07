@@ -16,10 +16,6 @@
     font-weight: v.$font-bold;
     letter-spacing: f.pxToRem(0.4);
   }
-  
-  @include m.mq('sp') {
-    width: f.pxToRem(50);
-  }
 }
 
 /* ===============================================

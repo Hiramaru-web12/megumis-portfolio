@@ -100,7 +100,6 @@ fv
 }
 
 .typing-animation {
-  
 	width: 16ch;	/*文字の長さ*/
 	border-right: 5px solid v.$color-font;	/*点滅バー*/
 	overflow: hidden;	/*必須*/
@@ -118,6 +117,7 @@ fv
 @keyframes blink {
   50% { border-color: transparent }
 }
+
 
 /* ===============================================
 about
