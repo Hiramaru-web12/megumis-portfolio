@@ -330,16 +330,22 @@ drawer
   display: flex;
   gap: 2rem;
 }
-.p-header__nav li {
+@media screen and ( max-width: 767px ) {
+  .p-header__nav {
+    display: none;
+  }
+}
+
+.p-header-nav_item {
   font-size: clamp(1rem, 0.714rem + 0.6vw, 1.25rem);
   margin: auto;
   position: relative;
 }
-.p-header__nav li a {
+.p-header-nav_item a {
   -webkit-transition: 0.5s ease-out;
   transition: 0.5s ease-out;
 }
-.p-header__nav li a::after {
+.p-header-nav_item a::after {
   position: absolute;
   content: "";
   display: inline-block;
@@ -354,16 +360,36 @@ drawer
   transition: 0.3s ease-out;
   cursor: pointer;
 }
-.p-header__nav li a:hover, .p-header__nav li a.current {
+.p-header-nav_item a:hover, .p-header-nav_item a.current {
   color: #f2a745;
 }
-.p-header__nav li a:hover::after, .p-header__nav li a.current::after {
+.p-header-nav_item a:hover::after, .p-header-nav_item a.current::after {
   -webkit-transform: translateX(-50%) scale(1, 1);
           transform: translateX(-50%) scale(1, 1);
 }
+
+.p-header__sns-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
+}
+.p-header__sns-icon rect {
+  -webkit-transition: 0.3s ease-out;
+  transition: 0.3s ease-out;
+}
+.p-header__sns-icon rect:hover {
+  opacity: 1;
+}
 @media screen and ( max-width: 767px ) {
-  .p-header__nav {
-    display: none;
+  .p-header__sns-icon {
+    margin-top: 2.5rem;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
@@ -381,21 +407,18 @@ drawer
           flex-flow: column;
   text-align: center;
 }
-.p-drawer__nav li {
+
+.p-drawer-nav__item {
   gap: 0.625rem;
   padding: 0.625rem 0;
 }
-.p-drawer__nav li:not(:last-child) {
+.p-drawer-nav__item:not(:last-child) {
   border-bottom: 1px solid #434343;
 }
-.p-drawer__nav li a {
+.p-drawer-nav__item a {
   padding: 1em 0;
   width: 100%;
   display: block;
-}
-.p-drawer__nav li a svg {
-  display: block;
-  margin: 1.25rem auto 0;
 }
 
 .p-drawer__copyright {

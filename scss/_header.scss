@@ -14,41 +14,60 @@
   display: flex;
   gap: f.pxToRem(32);
   
-  li {
-    font-size: clamp(1rem, 0.714rem + 0.6vw, 1.25rem);
-    margin: auto;
-    position: relative;
+  @include m.mq('sp'){
+    display: none;
+  } 
+}
+
+.p-header-nav_item {
+   font-size: clamp(1rem, 0.714rem + 0.6vw, 1.25rem);
+   margin: auto;
+   position: relative;
+   
+   a {
+     transition: 0.5s ease-out;
+     
+     &::after {
+       position: absolute;
+       content: "";
+       display: inline-block;
+       width: f.pxToRem(30);
+       height: f.pxToRem(1);
+       bottom:-6px;
+       left: 50%;
+       background: v.$color-accent;
+       transform: translateX(-50%) scale(0 , 1);
+       transition: 0.3s ease-out;
+       cursor: pointer;
+     }
+     
+     &:hover,
+     &.current {
+       color: v.$color-accent;
+       
+       &::after {
+         transform: translateX(-50%) scale(1 , 1);
+       } 
+     }
+   }
+ }
+
+.p-header__sns-icon {
+  display: flex;
+  align-items: center;
+  gap: f.pxToRem(16);
+
+  rect {
+    transition: .3s ease-out;
     
-    a {
-      transition: 0.5s ease-out;
-      
-      &::after {
-        position: absolute;
-        content: "";
-        display: inline-block;
-        width: f.pxToRem(30);
-        height: f.pxToRem(1);
-        bottom:-6px;
-        left: 50%;
-        background: v.$color-accent;
-        transform: translateX(-50%) scale(0 , 1);
-        transition: 0.3s ease-out;
-        cursor: pointer;
-      }
-      
-      &:hover,
-      &.current {
-        color: v.$color-accent;
-        
-        &::after {
-          transform: translateX(-50%) scale(1 , 1);
-        } 
-      }
+    &:hover {
+      opacity: 1.0;
     }
   }
 
   @include m.mq('sp'){
-    display: none;
+    margin-top: f.pxToRem(40);
+    justify-content: center;
   } 
 }
 
@@ -60,26 +79,20 @@ drawer
   display: flex;
   flex-flow: column;
   text-align: center;
+}
+
+.p-drawer-nav__item {
+  gap: f.pxToRem(10);
+  padding: f.pxToRem(10) 0;
+
+  &:not(:last-child){
+    border-bottom: 1px solid v.$color-font;
+  }
   
-  li {
-    gap: f.pxToRem(10);
-    padding: f.pxToRem(10) 0;
-
-    &:not(:last-child){
-      border-bottom: 1px solid v.$color-font;
-    }
-    
-    a {
-      padding: 1em 0;
-      width: 100%;
-      display: block;
-
-      svg {
-       display: block;
-       margin: f.pxToRem(20) auto 0;
-      }
-      
-    }
+  a {
+    padding: 1em 0;
+    width: 100%;
+    display: block;
   }
 }
 
