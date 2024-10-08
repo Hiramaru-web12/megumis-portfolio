@@ -1,3 +1,5 @@
+new WOW().init();
+
 document.addEventListener('DOMContentLoaded', function() {
   // ドロワー開閉
   const drawerIcon = document.querySelector('.c-drawer__icon');

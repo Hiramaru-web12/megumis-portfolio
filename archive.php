@@ -5,7 +5,7 @@
 </div>
 <section class="l-lower-works">
   <div class="l-lower-works__inner l-inner">
-    <h2 class="c-section__title wow fadeInUp">制作実績</h2>
+    <h2 class="c-section__title wow fadeInUp delay-2s">制作実績</h2>
     <div class="p-works__container l-section__container">
 
       <?php
