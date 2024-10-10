@@ -11,7 +11,7 @@
         <?php if( get_field('url') ) : ?>
         <div class="p-works-detal__item">
           <dt>サイトURL</dt>
-          <dd><a href="<?php the_field('url'); ?>"><?php the_field('url'); ?></a></dd>
+          <dd><a href="<?php the_field('url'); ?>" target="_blank"><?php the_field('url'); ?></a></dd>
         </div>
         <?php endif; ?>
         <?php if( get_field('id') ) : ?>
