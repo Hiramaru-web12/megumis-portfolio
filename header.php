@@ -5,8 +5,6 @@
   <!-- ここからTwitterカードの記述 -->
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <link rel="icon" href="./img/favicon.svg" sizes="any" type="img/svg+xml" />
-  <link rel="apple-touch-icon" href="./img/apple-touch-icon.png" />
   <!-- 180x180px -->
   <meta name="viewport" content="width=device-width, initiap-scale=1.0" />
   <meta name="robots" content="noindex , nofollow" />
@@ -44,8 +42,9 @@
 
             <ul class="p-header__sns-icon">
               <li>
-                <a href="https://x.com/hrmr_crt96"><svg width="36" height="36" viewBox="0 0 36 36" fill="none"
-                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <a href="https://x.com/hrmr_crt96" target="_blank" rel="noopener"><svg width="36" height="36"
+                    viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink">
                     <rect width="36" height="36" fill="url(#pattern0_369_100)" fill-opacity="0.7" />
                     <defs>
                       <pattern id="pattern0_369_100" patternContentUnits="objectBoundingBox" width="1" height="1">
@@ -57,8 +56,9 @@
                   </svg></a>
               </li>
               <li>
-                <a href="https://github.com/Hiramaru-web12"><svg width="30" height="30" viewBox="0 0 30 30" fill="none"
-                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <a href="https://github.com/Hiramaru-web12" target="_blank" rel="noopener"><svg width="30" height="30"
+                    viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink">
                     <rect width="30" height="30" fill="url(#pattern0_369_169)" fill-opacity="0.7" />
                     <defs>
                       <pattern id="pattern0_369_169" patternContentUnits="objectBoundingBox" width="1" height="1">
@@ -93,7 +93,7 @@
         </li>
         <ul class="p-header__sns-icon">
           <li>
-            <a href="https://x.com/hrmr_crt96">
+            <a href="https://x.com/hrmr_crt96" target="_blank" rel="noopener">
               <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg"
                 xmlns:xlink="http://www.w3.org/1999/xlink">
                 <rect width="36" height="36" fill="url(#pattern0_369_67)" opacity="0.7" />
@@ -108,7 +108,7 @@
             </a>
           </li>
           <li>
-            <a href="https://github.com/Hiramaru-web12">
+            <a href="https://github.com/Hiramaru-web12" target="_blank" rel="noopener">
               <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"
                 xmlns:xlink="http://www.w3.org/1999/xlink">
                 <rect width="30" height="30" fill="url(#pattern0_365_50)" opacity="0.7" />
